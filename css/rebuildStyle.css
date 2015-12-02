@@ -1,0 +1,643 @@
+/************landing page css********/
+
+#en-form .form-group {
+    margin-bottom: 0px;
+    width: 100%;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}
+
+#en-form .form-group input,#comments{
+	width:88%;
+	/*color:#c4c4c4!important;*/
+	font-family: GothamMd!important;
+	font-size: 14px;
+	line-height: 28px;
+	border-color: #c2c2c2;
+	padding: 7px 5px;
+	margin-left: 18px;
+	border-width: 0px 0px 1px;
+	border-style: none none solid;
+	border-color: -moz-use-text-color -moz-use-text-color #C2C2C2;
+}
+
+#en-form .form-control{
+	border-radius :0px!important;
+	/*color:#c4c4c4!important;*/
+	font-family: GothamMd!important;
+	font-size: 14px!important;
+	line-height: 28px!important;
+	box-shadow: none;
+}
+
+.title-box .lptitle{
+	width: 50%;
+	margin-left: 108px;
+	color: rgb(255, 255, 255);
+	margin-top: 72px;
+}
+
+#country{
+	width: 88%;
+	margin-left: 16px;
+	border-width: 0px 0px 1px;
+	border-style: none none solid;
+	border-color: -moz-use-text-color -moz-use-text-color #C2C2C2;
+}
+
+.desc-box .lp-desc{
+	font-size: 14px;
+	color: rgb(255, 255, 255);
+	width: 50%;
+	margin-left: 104px;
+}
+
+.lp-right{
+margin-top: 12px;
+float: right;
+margin-right: 5%;
+}
+.form-group label{
+    background: #FFF none repeat scroll 0% 0%;
+	width: 100%;
+	margin-bottom: 0px;
+	color: #C2C2C2;
+	text-align: left;
+	font-size: 18px;
+	font-weight: 200;
+	padding: 20px 0px 0px 24px !important;
+}
+
+#fsubmit {
+    width: 44% !important;
+	float: left !important;
+	background: #FFF none repeat scroll 0% 0%;
+	padding-bottom: 14px;
+	padding-left: 22px;
+	padding-top: 10px;
+	margin-top: -5px;
+}
+
+@-moz-document url-prefix() {
+	
+	#formenquiry,,#fsubmit {
+        margin-top: -2px;
+	}
+}
+
+
+.enquiry_submit{
+	width: 90%;
+	border-radius: 0px!important;	
+	border: 2px solid #36A9E0!important;
+	color: #36A9E0;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-right: 0px;
+	background-color: transparent;
+	z-index: 1;
+	position: relative;
+	font-family: GothamBk !important;
+	transition: all 0.3s ease 0s;
+	font-weight: bolder !important;
+}
+
+.enquiry_submit:hover{
+	color: #FFF;
+	background-color: #36A9E0;
+	z-index: 1;
+	font-weight: bolder !important;
+}
+
+
+
+  .banner-landing {
+    background-image: url("../img/banner.png") !important;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+.landing-downloads{
+	float:none	
+}
+
+section {
+    float: none;
+    position: inherit;
+}
+.container-downloads.gen {
+    margin-left: 0px !important;
+}
+
+/**************circleHover effect*************/
+.ch-info{
+	width: 100%;
+	text-align: center;
+	font-family: GothamBk;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 16px;
+	padding-top: 4.5%;
+	color: #000;
+}
+
+.contactPage .container-downloads .container-desc .cell-desc:hover  +.contactPage .container-downloads .cell-desc .desc p{
+	color:red;
+}
+.ch-info p {
+	color: #95C122;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	opacity: 0;
+	-webkit-transition: all 1s ease-in-out 0.4s;
+	-moz-transition: all 1s ease-in-out 0.4s;
+	-o-transition: all 1s ease-in-out 0.4s;
+	-ms-transition: all 1s ease-in-out 0.4s;
+	transition: all 1s ease-in-out 0.4s;
+}
+
+
+.ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+.D .mainContainer {
+    width: 100%;
+    display: table;
+    margin: 5% 0px;
+}
+
+.D .mainContainer .container .subContainer .containerB{
+    height: 262px;
+    width: 252px;
+    background-color: #A5A5A5;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+    transition: transform 1s ease 0s;
+    display: table;
+}
+
+ .D .mainContainer .container .subContainer .containerA {
+    display: table;
+    border-bottom: 10px solid #C6C6C6;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    transition: transform 1s ease 0s;
+}
+
+.D .mainContainer .container .subContainer{
+    position: relative;
+    min-width: 252px;
+    height: 262px;
+    transform-style: preserve-3d;
+    transition: transform 1s ease 0s;
+    perspective: 700px;
+}
+
+ .D .mainContainer .container .subContainer .containerB p:first-child{
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    font-family: GothamLT;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-top: 18px;
+    margin-bottom: 9px;
+    display: none;
+}
+
+.D .mainContainer .container .subContainer .containerB .border{
+    width: 100%;
+    height: 10px;
+    background-color: #95C122;
+    border-top: 1px solid #FFF;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.D .mainContainer .container .subContainer .containerB p{
+    font-size: 13px;
+    line-height: 17px;
+    font-family: GothamMd;
+    color: #FFF;
+    text-align: center;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px 7.5% 10px;
+}
+
+ .D .mainContainer .container .subContainer .circle{
+    width: 252px;
+    height: 252px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #787878;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: GothamLT;
+    position: relative;
+    float: left;
+}
+
+.D .mainContainer .container .subContainer .circle img{
+    width: 90%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    top: 0px;
+}
+
+.D .mainContainer .container .subContainer .circle p {
+    margin-top: 83px;
+}
+
+.D .mainContainer .container .subContainer .containerA {
+    display: table;
+    border-bottom: 10px solid #C6C6C6;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+    transition: transform 1s ease 0s;
+}
+
+
+.D .mainContainer{
+	width:100%;
+	display: table;
+	margin:5% 0;
+}
+
+ .D .mainContainer .container{
+	width:100%;
+	display: table-cell;
+}
+
+ .D .mainContainer .container .subContainer {
+	position: relative;
+	min-width:252px;
+	height:262px;
+	-webkit-perspective: 700px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 1s;
+	transition: transform 1s;
+	perspective:700px;
+}
+
+
+
+.D .mainContainer .container .subContainer .containerA{
+	display: table;
+	border-bottom: solid 10px #C6C6C6;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 3;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform:rotateY(0deg);
+	transition: transform 1s;
+}
+
+.D .mainContainer .container .subContainer .circle {
+	width:252px;
+	height:252px;
+	text-align: center;
+	text-transform: uppercase;
+	color:#787878;
+	font-size: 20px;
+	line-height: 25px;
+	font-family: GothamLT;
+	position: relative;
+	float:left;
+}
+
+.D .mainContainer .container .subContainer .circle img{
+	width:90%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	top:0;
+}
+
+.D .mainContainer .container .subContainer .circleB{
+	width:169px;
+	height:169px;
+	margin:40px;
+	border-radius:50%;
+	border: solid 2px #95C122;
+	position: absolute;
+	top:0;
+}
+
+.D .mainContainer .container .subContainer .circle p {
+	margin-top:83px;
+}
+
+.D .mainContainer .container .perspective:nth-child(4) .subContainer .circle p {
+	margin-top:93px;
+}
+
+.D .mainContainer .container .spacer {
+	display: table-cell;
+	width:15%;
+	height:100%;
+}
+
+.D .mainContainer .container .spacer:first-child,.D .mainContainer .container .spacer:last-child{
+	width:15%;
+}
+.D .mainContainer .container .subContainer .containerB{
+	height:262px;
+	width:252px;
+	background-color: #A5A5A5;
+	position: absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+	transition: transform 1s;
+	display: table;
+}
+
+.D .mainContainer .container .subContainer .containerB .border {
+	width:100%;
+	height:10px;
+	background-color: #95C122;
+	border-top:solid 1px white;
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+
+.rotated {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.rotatedIeA {
+	transform: rotateY(180deg) !important;
+}
+
+.rotatedIeB {
+	transform: rotateY(0deg) !important;
+}
+
+.D .mainContainer .container .subContainer .containerB p:first-child{
+	font-size: 20px;
+	line-height: 25px;
+	text-align: center;
+	font-family: GothamLT;
+	text-transform: uppercase;
+	color:white;
+	margin-top:18px;
+	margin-bottom:9px;
+	display: none;
+}
+
+.D .mainContainer .container .subContainer .containerB p:nth-child(2){
+	font-size: 13px;
+	line-height: 17px;
+	text-align: center;
+	font-family: GothamMd;
+	color:white;
+	text-align: center;
+	width:100%;
+	display: table-cell;
+	vertical-align: middle;
+	padding:0 7.5%;
+	padding-bottom: 10px;
+}
+
+ .D .mainContainer .container .subContainer .containerB p:nth-child(2) span {
+	display: block;
+	line-height: 10px;
+}
+
+.perspective {
+   padding-top: 29px;
+   display: table-cell;
+   perspective: 700px;
+   transform-style: preserve-3d;
+}
+
+.D .mainContainer .container .subContainer .containerB h3{
+position: absolute;
+    top: 208px;
+    left: 83px;
+    font-size: 14px;
+    font-weight: 600
+	
+}
+
+.D .mainContainer .container .subContainer .containerB h3 a{
+	color:#fff;
+}
+
+.header .mainLogo {
+    display: table;
+    width: 210px;
+}
+
+
+.contactPage #headerMain {
+padding-top: 10%;
+}
+
+.header-logo {
+    width: 100%;
+    height: 137px;
+}
+
+.absoluteCenter {
+	position: relative;
+	top: 0px;
+	left: 42%;
+	right: null;
+	margin: auto;
+    width: 210px;
+    padding-top: 20px;
+}
+
+.footer.footer-res {
+   position: absolute !important;
+   top: 198%;
+}
+
+.footer .rightPane ul li a{
+	color:#fff;
+}
+
+.container.ft{
+	width:100%;
+	float:left;
+}
+
+.footer-container{
+height: 23em;
+background-color: #95C122;
+}
+
+.contactPage .B .banner {
+    background-blend-mode: inherit;
+}
+
+section.footer.row{
+	margin: -18px;
+	
+}
+
+.footer-container .logoContainer .logo {
+    width: 15%;
+	display: block;
+	margin: 7% 17% 3%;
+}
+
+.footer-container .logoContainer .social{
+	margin: 4% 14% 0%;
+	
+}
+
+.footer-container .logoContainer .social a:nth-child(1) img {
+    width: 23px;
+    margin-bottom: -1px;
+}
+
+.footer-container .logoContainer .social a:nth-child(2) img {
+    width: 10px;
+    margin-left: 20px;
+}
+
+.footer-container .logoContainer .social a:nth-child(3) img {
+    width: 22px;
+    margin-left: 23px;
+    margin-bottom: -1px;
+}
+.footer-container .logoContainer {
+    display: table;    
+}
+
+.footer-copyright{
+	color: #FFF;
+	font-size: 11px;
+	position: absolute !important;
+	text-align: center;
+	bottom: 20px;
+	font-family: GothamBk;
+	float: left;
+	left: 33%;
+}
+.footer-container ul {
+list-style: outside none none;
+text-transform: uppercase;
+color: #FFF;
+font-family: GothamMd;
+font-size: 18px;
+line-height: 35px;
+text-align: center;
+display: table;
+padding: 0px;
+float: right;
+margin: 30px 70px 30px auto;
+}
+
+.footer-container ul li a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.banner-landing {
+    background-image: url("../img/banner.png") !important;
+	
+}	
+
+#formenquiry {
+    width: 56% !important;
+    float: left !important;
+    background: #FFF none repeat scroll 0% 0%;
+    padding: 3px 27px 16px 0px;
+    margin-top: -5px;
+   
+}
+
+.req_submit {
+	border-radius: 0px !important;
+	color: #95C122;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-right: 0px;
+	z-index: 1;
+	position: relative;
+	font-family: GothamBk !important;
+	transition: all 0.3s ease 0s;
+	font-weight: bolder !important;
+	float: left !important;
+	background: #FFF none repeat scroll 0% 0%;
+	margin-top: 6px;
+	border: 2px solid #95C122 !important;
+	padding: 9px 1px 4px 0px !important;
+	width: 100% !important;
+	font-size: 12px !important;
+}
+
+
+.req_submit:hover{
+color: #FFF;
+background-color: #95C122;
+z-index: 1;
+}
+
+.absolute-center{
+top: 91px!important;
+}
+
+section.footer.row.footer_content {
+    margin: 0 0 -16px 0px;
+}
+
+#comments{	
+	width: 88% !important;
+	border-bottom: 1px solid #c2c2c2 !important;
+}
+
+.form-control{
+	padding:0px!important;
+}
+
+.D .mainContainer .container .spacer {
+    display: table-cell;
+    width: 15%;
+    height: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 760px) { 
+.absoluteCenter {   
+    left: 30%;
+}
+
+}
+

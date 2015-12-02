@@ -1,0 +1,35 @@
+/**********Landing page css ***************/
+.lp-left {
+    float: left;
+    width: 50%;
+}
+
+.lp-right {
+    width: 50%;
+    float: left;
+}
+
+h1.lptitle {
+    color: #fff;
+    font-weight: 200;
+    font-size: 24px;
+    margin: 50px 50px 0 150px;
+}
+
+.desc-box {
+    width: 100%;
+    float: left;
+}
+
+.title-box {
+    width: 100%;
+    float: left;
+}
+
+h6.lp-desc {
+    width: 50%;
+    margin: 50px 50px 0 150px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 100;
+}

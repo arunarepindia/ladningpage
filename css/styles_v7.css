@@ -1,0 +1,6637 @@
+@font-face {
+	font-family: 'GothamLT';
+	src: url('../font/Gotham-Thin/Gotham-Thin.eot?#iefix') format('embedded-opentype'),  url('../font/Gotham-Thin/Gotham-Thin.otf')  format('opentype'),
+	url('../font/Gotham-Thin/Gotham-Thin.woff') format('woff'), url('../font/Gotham-Thin/Gotham-Thin.ttf')  format('truetype'), url('../font/Gotham-Thin/Gotham-Thin.svg#Gotham-Thin') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamMd';
+	src: url('../font/Gotham-Light/Gotham-Light.eot?#iefix') format('embedded-opentype'),  url('../font/Gotham-Light/Gotham-Light.otf')  format('opentype'),
+	url('../font/Gotham-Light/Gotham-Light.woff') format('woff'), url('../font/Gotham-Light/Gotham-Light.ttf')  format('truetype'), url('../font/Gotham-Light/Gotham-Light.svg#Gotham-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamBk';
+	src: url('../font/Gotham-Book/Gotham-Book.eot?#iefix') format('embedded-opentype'),  url('../font/Gotham-Book/Gotham-Book.otf')  format('opentype'),
+	url('../font/Gotham-Book/Gotham-Book.woff') format('woff'), url('../font/Gotham-Book/Gotham-Book.ttf')  format('truetype'), url('../font/Gotham-Book/Gotham-Book.svg#Gotham-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GothamBd';
+	src: url('../font/Gotham-Bold/Gotham-Bold.eot?#iefix') format('embedded-opentype'),  url('../font/Gotham-Bold/Gotham-Bold.otf')  format('opentype'),
+	url('../font/Gotham-Bold/Gotham-Bold.woff') format('woff'), url('../font/Gotham-Bold/Gotham-Bold.ttf')  format('truetype'), url('../font/Gotham-Bold/Gotham-Bold.svg#Gotham-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
+	font-family: GothamBk;
+	min-width: 320px;
+}
+
+body {
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	display: table;
+	overflow-x: hidden;
+	font-family: GothamBk;
+	min-width: 320px;
+}
+
+section {
+	width:100%;
+	float: left;
+	margin:0;
+	padding:0;
+	position: relative;
+	display: table;
+	height:90px;
+	min-height:90px;
+	background-color: #FFFFFF;
+}
+
+p {
+	margin:0;
+	padding:0;
+}
+
+a {
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+.noScroll {
+	overflow:hidden;
+}
+
+.lightbox {
+	height:400px;
+	width:50%;
+	position: absolute;
+}
+
+.lightbox-tnc {
+	z-index: 2000;
+}
+
+.lightbox-registration {
+	z-index: 1000;
+}
+
+.lightbox .underlay {
+	background-color: #818181;
+	opacity:0.5;
+	width:100%;
+	height:100%;
+	position: absolute;
+}
+
+.lightbox .container {
+	width:60%;
+	height:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	position: absolute;
+	margin:auto;
+	border-top:solid 1px #95C122;
+	border-bottom:solid 1px #95C122;
+}
+
+.lightbox .container .underlay {
+	opacity:0.9;
+	background-color: #FFFFFF;
+}
+
+.lightbox .container img {
+	position: relative;
+	display: block;
+	height:5%;
+	min-height: 32px;
+	max-height: 42px;
+	margin:0 auto;
+	margin-top:4%;
+}
+
+.lightbox .container .heading {
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	color:#36A9E0;
+	font-family: gothamlt;
+	margin-top: 3%;
+	margin-bottom:4%;
+}
+
+.lightbox-tnc .container .tnc-container {
+	width:80%;
+	height:60%;
+	margin-left:10%;
+	border:solid 1px #36A9E0;
+	position: relative;
+	font-family: gothambk;
+	font-size:13px; 
+}
+
+.lightbox-tnc .container .tnc-container .term {
+	color:#36A9E0;
+	margin-bottom: 5px;
+	margin-top:0px;
+	font-size:15px;
+}
+
+.lightbox-tnc .container .tnc-container .tnc-wrapper {
+	width:90%;
+	height:88%;
+	margin:5%;
+	overflow: scroll;
+}
+
+.lightbox-tnc .container .tnc-container .desc {
+	margin-top:0;
+	margin-bottom: 30px;
+}
+
+.lightbox-tnc .container form {
+	width:100%;
+	position: relative;
+	color:#36A9E0;
+	margin-top:4%;
+}
+
+.lightbox-tnc .container .tnc-accept {
+	color:#36A9E0;
+	float: left;
+	margin-right: 20px;
+	font-size: 20px;
+	margin-top: 1px;
+}
+
+.lightbox-tnc .container .tnc-submit {
+	display: block;
+	margin:0 auto;
+	background-color: #95C122;
+	border: none;
+	outline:none;
+	width:100px;
+	margin-top:3%;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	font-family: gothambk;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding-top: 10px;
+	padding-bottom: 9px;
+	margin-top: 7%;
+	margin-bottom: 9%;
+	cursor: pointer;
+}
+
+.lightbox-tnc .container .accept-container {
+	display: table;
+	margin:4% auto;
+	position: relative;
+	margin-bottom: 0;
+}
+
+.lightbox-tnc .container .accept-container label {
+	color:#36A9E0;
+}
+
+.lightbox .container .registration-container {
+	position: relative;
+	display: table;
+	width:100%;
+}
+
+.lightbox .container .registration-container form {
+	width:100%;
+	display:table;
+}
+
+.lightbox .container .registration-container form .wrapper {
+	display:table;
+	margin:0 auto;
+	width:100%;
+	text-align: center;
+	margin-top: 25px;
+}
+
+.lightbox .container .registration-container form .wrapper:first-child {
+	margin-top:4%;
+}
+
+.lightbox .container .registration-container form .wrapper:first-child input:nth-child(2) {
+	margin:0 25px;
+}
+
+.lightbox .container .registration-container form .wrapper:nth-child(2) input:first-child {
+	margin-right: 25px;
+}
+
+.lightbox .container .registration-container form .wrapper:last-child input {
+	background-color: #95C122;
+	border:none;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	width:120px;
+	cursor:pointer;
+}
+
+.lightbox .container .registration-container form input {
+	background-color: transparent;
+	height:40px;
+	width:170px;
+	border:solid 1px #808080;
+	text-align: center;
+	padding: 0;
+	outline: none;
+	color:#000000;
+	font-size: 13px;
+	line-height: 43px;
+	font-family: gothambk;
+}
+
+.lightbox .container .registration-container form input::-webkit-input-placeholder {
+	color:#36A9E0;
+}
+
+.absoluteCenter {
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin: auto;
+}
+
+.noClick {
+	pointer-events: none !important;
+	cursor: default !important;
+}
+
+.disabled {
+	pointer-events: none;
+	color:#C6C6C6;
+	border-color: #C6C6C6;
+}
+
+.enabled {
+	color:#95C122;
+	border-color: #95C122;
+}
+
+.boxShadow {
+	-webkit-box-shadow: -2px 2px 14px -7px rgba(20,20,20,1);
+	-moz-box-shadow: -2px 2px 14px -7px rgba(20,20,20,1);
+	-ms-box-shadow: -2px 2px 14px -7px rgba(20,20,20,1);
+	-o-box-shadow: -2px 2px 14px -7px rgba(20,20,20,1);
+	box-shadow: -2px 2px 14px -7px rgba(20,20,20,1);
+}
+
+.homeLink {
+	position: relative;
+	z-index: 1;
+}
+
+.adContainerA {
+	width:100%;
+	background-color: #95C122;
+	text-align: center;
+	color:#FFFFFF;
+	font-family: GothamLT;
+	font-size: 40px;
+	z-index: 3;
+	display: none;
+}
+
+.homePage .adContainerB {
+	width:90%;
+	margin-left: 5%;
+	height:120px;
+	background-color: #36A9E0;
+	text-align: center;
+	color:#FFFFFF;
+	font-family: GothamLT;
+	font-size: 40px;
+	line-height: 120px;
+	margin-bottom: 4%;
+	display: none;
+}
+
+.hamBurger {
+	display:table;
+	position: relative;
+	float: right;
+	z-index: 100;
+	cursor:pointer;
+	margin-top: 34px;
+	margin-left:55px;
+	margin-right: 41px;
+}
+
+.hamLinks {
+	padding:0;
+	display: none;
+	list-style: none;
+	font-family: GothamMd;
+	font-size: 14px;
+	line-height: 90px;
+	color:#787878;
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+	opacity: 0;
+}
+
+.hamLinks li {
+	display:inline-block;
+	margin-left:40px;
+	cursor: pointer;
+}
+
+#headerAlt .hamLinks li {
+	line-height: 90px;
+}
+
+.hamLinks li a {
+	color:#787878;
+}
+
+.hamLinks li a:hover {
+	color:#95C122;
+}
+
+.hamLinks li:first-child {
+	margin:0;
+}
+
+.homePage .hamBurger {
+	margin-top:54px;
+}
+
+.nav {
+	background-color: #FFFFFF;
+	position: fixed;
+	width:25%;
+	z-index: 101;
+	top:0;
+	left:0;
+	display: none;
+	opacity:0;
+}
+
+.nav .close {
+	float: right;
+	width:50px;
+	margin:25px;
+	cursor:pointer;
+	position: relative;
+	z-index: 1;
+}
+
+.nav .wrapperOuter {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.nav .wrapper {
+	display: inline-block;
+}
+
+.nav ul  {
+	font-family:GothamLT;
+	color:#FFFFFF;
+	font-size: 27px;
+	text-align: center;
+	list-style: none;
+	line-height: 40px;
+	display: table;
+	text-transform: uppercase;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+
+.nav ul p {
+	font-size: 13px;
+	color:#36A9E0;
+	font-family: GothamBd;
+	letter-spacing: 1px;
+	line-height: 15px;
+	margin-top: 2%;
+	margin-bottom: 0.3%;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color:#747474;
+	height:100%;
+	width:100%;
+	display: block;
+}
+
+.nav ul .container:first-child {
+	margin-top: 0;
+	-webkit-transition-delay: 0.3s;
+	-moz-transition-delay: 0.3s;
+	-ms-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.nav ul .container:nth-child(2) {
+	-webkit-transition-delay: 0.4s;
+	-moz-transition-delay: 0.4s;
+	-ms-transition-delay: 0.4s;
+	-o-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.nav ul .container:nth-child(3) {
+	-webkit-transition-delay: 0.5s;
+	-moz-transition-delay: 0.5s;
+	-ms-transition-delay: 0.5s;
+	-o-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.nav ul .container:nth-child(4) {
+	-webkit-transition-delay: 0.6s;
+	-moz-transition-delay: 0.6s;
+	-ms-transition-delay: 0.6s;
+	-o-transition-delay: 0.6s;
+	transition-delay: 0.6s;
+}
+
+.nav ul .container:nth-child(5) {
+	-webkit-transition-delay: 0.7s;
+	-moz-transition-delay: 0.7s;
+	-ms-transition-delay: 0.7s;
+	-o-transition-delay: 0.7s;
+	transition-delay: 0.7s;
+}
+
+.nav ul .container:nth-child(6) {
+	margin-bottom: 1%;
+	-webkit-transition-delay: 0.8s;
+	-moz-transition-delay: 0.8s;
+	-ms-transition-delay: 0.8s;
+	-o-transition-delay: 0.8s;
+	transition-delay: 0.8s;
+}
+
+.nav ul .container {
+	display: table;
+	width:100%;
+	margin-top:2.5%;
+	opacity:0;
+	-webkit-transition: opacity 400ms linear, -webkit-transform .2s ease-out;
+	-moz-transition: opacity 400ms linear, -moz-transform .2s ease-out;
+	-o-transition: opacity 400ms linear, -o-transform .2s ease-out;
+	transition: opacity 400ms linear, transform .2s ease-out;
+}
+
+.isActive {
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	-ms-transform: translateY(10px);
+	-o-transform: translateY(10px);
+	transform: translateY(10px);
+	opacity: 1 !important;
+}
+
+.nav ul li:nth-child(1), .nav ul li:nth-child(3), .nav ul li:nth-child(4), .nav ul li:nth-child(7), .nav ul li:nth-child(8), .nav ul li:nth-child(9) {
+	margin-top:0;
+}
+
+.nav ul li a:hover {
+	color:#36A9E0;
+}
+
+.chat {
+	position: fixed;
+	bottom: 0;
+	right:5px;
+	width:230px;
+	height:200px;
+	background-color: white;
+	z-index: 1;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	box-shadow: -2px 4px 20px -6px rgba(20,20,20,1);
+}
+
+.chatHead {
+	width:100%;
+	height: 40px;
+	background-color: #494949;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	font-family: GothamMd;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-indent: 15px;
+	color:white;
+	line-height: 40px;
+}
+
+.chatHead .minimize {
+	width:16px;
+	height:2px;
+	background-color: #FFFFFF;
+	float:right;
+	margin-right:10px;
+	margin-top: 19px;
+	position: relative;
+	cursor: pointer;
+}
+
+.chatHead .minimize div {
+	position: absolute;
+	height:14px;
+	width:2px;
+	background-color: #FFFFFF;
+	top: -6px;
+	left: 7px;
+	opacity: 0;
+}
+
+.mainOrnamentContainer {
+	position: fixed;
+	top:275px;
+	right:30px;
+	z-index: 98;
+	width:55px;
+	height:292px;
+	overflow: hidden;
+	display: none;
+}
+
+.mainOrnamentContainer .greyConatiner .top, .mainOrnamentContainer .greenConatiner .top {
+	display: block;
+}
+
+.mainOrnamentContainer .greyConatiner .rest, .mainOrnamentContainer .greenConatiner .rest {
+	display: block;
+	float: right;
+	margin-right:9px;
+}
+
+.mainOrnamentContainer .greenConatiner {
+	width:100%;
+}
+
+.mainOrnamentContainer .greenConatiner .top, .mainOrnamentContainer .greyConatiner .top {
+	width:100%;
+}
+
+.mainOrnamentContainer .greenConatiner .fillMainContainer {
+	position: absolute;
+	top:9px;
+	left:7px;
+	height:42px;
+	width:42px;
+}
+
+.mainOrnamentContainer .greenConatiner .fillContainer {
+	position: absolute;
+	bottom: 0;
+	height:42px;
+	transform:rotate(180deg);
+	overflow: hidden;
+}
+
+.mainOrnamentContainer .greenConatiner .fillContainer .fill {
+	width:100%;
+}
+
+.mainOrnamentContainer .restContainer {
+	width:55px;
+	height:0px;
+	overflow: hidden;
+}
+
+.homePage .header {
+	height:130px;
+}
+
+#headerAlt {
+	height:90px;
+}
+
+#headerAlt .hamBurger {
+	margin-top:34px;
+}
+
+.homePage .header .mainLogo {
+	display: table;
+	width:210px;
+}
+
+.hamBurger .bar {
+	width:38px;
+	height:2px;
+	background-color: #95C122;
+}
+
+.hamBurger p {
+	color:#95C122;
+	font-size: 12px;
+	line-height: 18px;
+	margin-top:1px;
+	text-align: center;
+}
+
+.hamBurger .bar:first-child {
+	margin-top:0;
+}
+
+.A .mainContainer {
+	width:100%;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	height:100%;
+	background-image: url(../img/Travel-Hacking-221.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:top center;
+	background-color: #36A9E0;
+	background-blend-mode: multiply;
+}
+
+.tncPage .A {
+	width:100%;
+	position: relative;
+	display: table;
+	vertical-align: middle;
+	background-image: url(../img/Travel-Hacking-221.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:top center;
+	background-color: #36A9E0;
+	background-blend-mode: multiply;
+}
+
+.destinationsPage .A .mainContainer {
+	background-image: url(../img/india1.jpg);
+}
+
+.A .mainContainer .head {
+	font-family: GothamLT;
+	font-size: 50px;
+	line-height: 50px;
+	height:50px;
+	color:white;
+	width:100%;
+	text-align: center;
+	display:table;
+}
+
+.homePage .A .mainContainer .container {
+	display: table;
+	width:100%;
+}
+
+.homePage .A .mainContainer .indicatorsContainer {
+	display: table;
+	width:110px;
+	margin:0 auto;
+	display: none;
+}
+
+.homePage .A .mainContainer .indicatorsContainer .indicator {
+	height:8px;
+	width:8px;
+	border-radius: 50%;
+	border:solid 2px white;
+	float:left;
+	margin-left:20px;
+}
+
+.homePage .A .mainContainer .indicatorsContainer .indicator:first-child {
+	margin-left:0;
+	background-color: #95C122;
+	border-color: #95C122;
+}
+
+.homePage .A .mainContainer .desc {
+	position: relative;
+	font-family: GothamLT;
+	color:#FFFFFF;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 28px;
+	width:100%;
+	text-align: center;
+	margin-top:3%;
+	line-height: 24px;
+}
+
+.homePage .A .mainContainer .buttonContainer {
+	display: table;
+	width:240px;
+	margin:4% auto;
+	position: relative;
+	cursor: pointer;
+	margin-bottom: 0;
+	z-index: 1;
+}
+
+.homePage .A .mainContainer .buttonContainer:after {
+	width:100%;
+	content: '';
+	height:0;
+	position: absolute;
+	top:0;
+	left:2px;
+	background-color: #95C122;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.homePage .A .mainContainer .buttonContainer .button {
+	width:100%;
+	line-height: 33px;
+	padding-top:5px;
+	text-transform: uppercase;
+	border:solid 2px #95C122;
+	font-family: GothamMd;
+	color:white;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	background-color: #95C122;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.homePage .A .mainContainer .buttonContainer .button:hover {
+	transform: scale(1.1);
+}
+
+.homePage .A .mainContainer .buttonContainer:hover .button {
+	border-color: #95C122;
+}
+
+.homePage .A .mainContainer .buttonContainer:hover:after {
+	height:100%;
+}
+
+.homePage .A .ornamentContainer {
+	display: table;
+	width:100%;
+	height:40px;
+	position:absolute;
+	bottom:0;
+	margin:0;
+	display: none;
+}
+
+.homePage .A .ornamentContainer .left {
+	width:30%;
+	height:100%;
+	background-color: #95C122;
+	float: left;
+}
+
+.homePage .A .ornamentContainer .right {
+	width:100%;
+	height:100%;
+	background-color: #C6C6C6;
+}
+
+.B {
+	background-color: #FFFFFF;
+}
+
+.homePage .B .logo {
+	display: table;
+	margin:3% auto;
+	width:70px;
+}
+
+.homePage .B .headContainer {
+	display: table;
+	background-color: #95C122;
+	width:100%;
+}
+
+.homePage .B .head, .homePage .D .head {
+	width:100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: GothamLT;
+	font-size: 40px;
+	color:#787878;
+}
+
+.homePage .B .head {
+	color:#FFFFFF;
+	margin-top: 1%;
+}
+
+.homePage .B .subHead {
+	text-align: center;
+	color:#FFFFFF;
+	font-size: 14px;
+	font-family: GothamBk;
+	margin-bottom: 2%;
+}
+
+.homePage .B .mainContainer, .homePage .D .mainContainer, .aboutMeetPage .C .mainContainer {
+	width:100%;
+	display: table;
+	margin:5% 0;
+}
+
+.homePage .B .mainContainer .container, .homePage .D .mainContainer .container, .aboutMeetPage .C .mainContainer  .container{
+	width:100%;
+	display: table-cell;
+}
+
+.perspective {
+	display: table-cell;
+	-webkit-perspective: 700px;
+	perspective: 700px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.aboutPage .perspective {
+	cursor: pointer;
+}
+
+.homePage .B .mainContainer .container .subContainer, .homePage .D .mainContainer .container .subContainer, .aboutMeetPage .C .mainContainer .container .subContainer {
+	position: relative;
+	min-width:252px;
+	height:262px;
+	-webkit-perspective: 700px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 1s;
+	transition: transform 1s;
+	perspective:700px;
+}
+
+.aboutMeetPage .C .mainContainer .container .subContainer {
+	-webkit-transform: rotateY(0deg) !important;
+	transform: rotateY(0deg) !important;
+}
+
+.homePage .B .mainContainer .container .subContainer {
+	-webkit-transform: rotateY(0deg) !important;
+	transform: rotateY(0deg) !important;
+	cursor: pointer;
+}
+
+.homePage .B .mainContainer .container .subContainer .containerA, .homePage .D .mainContainer .container .subContainer .containerA, .aboutMeetPage .C .mainContainer .container .subContainer .containerA {
+	display: table;
+	border-bottom: solid 10px #C6C6C6;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 3;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform:rotateY(0deg);
+	transition: transform 1s;
+}
+
+.homePage .B .mainContainer .container .subContainer .circle, .homePage .D .mainContainer .container .subContainer .circle, .aboutMeetPage .C .mainContainer .container .subContainer .circle {
+	width:252px;
+	height:252px;
+	text-align: center;
+	text-transform: uppercase;
+	color:#787878;
+	font-size: 20px;
+	line-height: 25px;
+	font-family: GothamLT;
+	position: relative;
+	float:left;
+}
+
+.homePage .B .mainContainer .container .subContainer .circle img, .homePage .D .mainContainer .container .subContainer .circle img, .aboutMeetPage .C .mainContainer .container .subContainer .circle img {
+	width:90%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	top:0;
+}
+
+.homePage .B .mainContainer .container .subContainer .circleB, .homePage .D .mainContainer .container .subContainer .circleB, .aboutMeetPage .C .mainContainer .container .subContainer .circleB {
+	width:169px;
+	height:169px;
+	margin:40px;
+	border-radius:50%;
+	border: solid 2px #95C122;
+	position: absolute;
+	top:0;
+}
+
+.homePage .B .mainContainer .container .subContainer .circle p, .homePage .D .mainContainer .container .subContainer .circle p, .aboutMeetPage .C .mainContainer .container .subContainer .circle p {
+	margin-top:83px;
+}
+
+.homePage .D .mainContainer .container .perspective:nth-child(4) .subContainer .circle p {
+	margin-top:93px;
+}
+
+.homePage .B .mainContainer .container .spacer, .homePage .D .mainContainer .container .spacer, .aboutMeetPage .C .mainContainer .container .spacer {
+	display: table-cell;
+	width:35%;
+	height:100%;
+}
+
+.homePage .B .mainContainer .container .spacer:first-child, .homePage .B .mainContainer .container .spacer:last-child, .homePage .D .mainContainer .container .spacer:first-child, .homePage .D .mainContainer .container .spacer:last-child, .aboutMeetPage .C .mainContainer .container .spacer:first-child, .aboutMeetPage .C .mainContainer .container .spacer:last-child {
+	width:15%;
+}
+
+.homePage .B .mainContainer .container .subContainer .containerB, .homePage .D .mainContainer .container .subContainer .containerB, .aboutMeetPage .C .mainContainer  .container .subContainer .containerB{
+	height:262px;
+	width:252px;
+	background-color: #A5A5A5;
+	position: absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+	transition: transform 1s;
+	display: table;
+}
+
+.homePage .B .mainContainer .container .subContainer .containerB .border, .homePage .D .mainContainer .container .subContainer .containerB .border, .aboutMeetPage .C .mainContainer .container .subContainer .containerB .border {
+	width:100%;
+	height:10px;
+	background-color: #95C122;
+	border-top:solid 1px white;
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+
+.rotated {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.rotatedIeA {
+	transform: rotateY(180deg) !important;
+}
+
+.rotatedIeB {
+	transform: rotateY(0deg) !important;
+}
+
+.homePage .B .mainContainer .container .subContainer .containerB p:first-child, .homePage .D .mainContainer .container .subContainer .containerB p:first-child, .aboutMeetPage .C .mainContainer .container .subContainer .containerB p:first-child {
+	font-size: 20px;
+	line-height: 25px;
+	text-align: center;
+	font-family: GothamLT;
+	text-transform: uppercase;
+	color:white;
+	margin-top:18px;
+	margin-bottom:9px;
+	display: none;
+}
+
+.homePage .B .mainContainer .container .subContainer .containerB p:nth-child(2), .homePage .D .mainContainer .container .subContainer .containerB p:nth-child(2), .aboutMeetPage .C .mainContainer  .container .subContainer .containerB p:nth-child(2){
+	font-size: 13px;
+	line-height: 17px;
+	text-align: center;
+	font-family: GothamMd;
+	color:white;
+	text-align: center;
+	width:100%;
+	display: table-cell;
+	vertical-align: middle;
+	padding:0 7.5%;
+	padding-bottom: 10px;
+}
+
+.homePage .D .mainContainer .container .subContainer .containerB p:nth-child(2) span {
+	display: block;
+	line-height: 10px;
+}
+
+.homePage .C {
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.homePage .C .head, .homePage .F .head, .aboutPage .B .head, .aboutPage .C .banner .head, .aboutPage .E .head, .howPage .E .head {
+	font-family: GothamLT;
+	color:#FFFFFF;
+	font-size: 40px;
+	width:100%;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top:4%;
+	margin-bottom: 2%;
+}
+
+.aboutPage .B .head, .aboutPage .E .head, .howPage .E .head {
+	color:#36A9E0;
+}
+
+.ornamentContainer {
+	display:table;
+	margin:0 auto;
+	width:60%;
+	position: relative;
+	margin-bottom: 2%
+}
+
+.aboutPage .E .ornamentContainer, .ayurvedaPage .ornamentContainer {
+	margin-top:5%;
+}
+
+.aboutPage .B .ornamentContainer {
+	margin-top:4%;
+}
+
+.ornamentContainer .left, .ornamentContainer .right {
+	width:47%;
+	height:2px;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+
+.aboutPage .B .ornamentContainer .left, .aboutPage .B .ornamentContainer .right, .aboutPage .E .ornamentContainer .left, .aboutPage .E .ornamentContainer .right, .howPage .E .ornamentContainer .left, .howPage .E .ornamentContainer .right, .ayurvedaPage .ornamentContainer .right, .ayurvedaPage .ornamentContainer .left {
+	background-color: #36A9E0;
+}
+
+.ornamentContainer img {
+	width:20px;
+	height:17px;
+	position: absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	top:-10px;
+}
+
+.ornamentContainer .left {
+	float:left;
+}
+
+.ornamentContainer .right {
+	float:right;
+}
+
+.homePage .C .content, .aboutPage .B .content, .aboutPage .E .content, .homePage .F .content {
+	width:60%;
+	margin:0 auto;
+	font-family:GothamMd;
+	color:#FFFFFF;
+	font-size:15px;
+	text-align: center;
+	line-height: 25px;
+	margin-bottom:3%;
+}
+
+.aboutPage .E .content {
+	margin-bottom: 4%;
+}
+
+.homePage .F .content {
+	color:#919191;
+}
+
+.aboutPage .B .content {
+	color:#787878;
+	display: table;
+}
+
+.aboutPage .B .content span {
+	white-space: nowrap;
+}
+
+.homePage .D .head {
+	margin-top:4%;
+}
+
+.homePage .D .indicatorsContainer {
+	display: table;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+
+.homePage .D .indicatorsContainer .indicator {
+	height:8px;
+	width:8px;
+	border-radius: 50%;
+	border:solid 2px #95C122;
+	float:left;
+	margin-left:20px;
+	cursor: pointer;
+}
+
+.filled {
+	margin-left:0;
+	background-color: #95C122;
+	border-color: #95C122;
+}
+
+.homePage .D .flexBox {
+	display: flex;
+}
+
+.homePage .E {
+	background-image: url(../img/bg3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.homePage .F .headContainer {
+	display:table;
+	background-color: #36A9E0;
+	width:100%;
+	margin-bottom: 3%;
+}
+
+.homePage .F .partnersContainer {
+	display: table;
+	width:100%;
+	min-height:100px;
+	margin-bottom: 4%;
+}
+
+.homePage .F .partnersContainer .subContainer {
+	display: table-row;
+}
+
+.homePage .F .partnersContainer .container {
+	display: table-cell;
+	width:33%;
+	height:100%;
+	font-family: GothamMd;
+	color:#787878;
+}
+
+.homePage .F .partnersContainer .container:nth-child(2) {
+	width:calc(34% - 2px);
+	border-left: solid 1px #C6C6C6;
+	border-right: solid 1px #C6C6C6;
+}
+
+.homePage .F .partnersContainer .container p{
+	width:80%;
+	margin:0 auto;
+	text-align: center;
+	line-height: 25px;
+}
+
+.homePage .F .partnersContainer .subContainer:last-child .container p span {
+	display: none;
+}
+
+.homePage .F .partnersContainer .subContainer:first-child .container p {
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.homePage .F .partnersContainer .subContainer:last-child .container p {
+	font-size: 15px;
+	margin-bottom: 8%;
+}
+
+.footer, .meetPage .D, .aboutPage .H, .howPage .F {
+
+	background-color: #95C122;
+}
+
+
+.footer .rightPane, .meetPage .D .rightPane, .aboutPage .H .rightPane, .howPage .F .rightPane {
+	width:100%;
+	height:100%;
+	float: right;
+	position: relative;
+}
+
+.footer .rightPane ul, .meetPage .D .rightPane ul, .aboutPage .H .rightPane ul, .howPage .F .rightPane ul {
+	list-style: none;
+	text-transform: uppercase;
+	color:white;
+	font-family: GothamMd;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	display: table;
+	margin:0;
+	padding:0;
+	float:right;
+	margin:30px auto;
+	margin-right:70px;
+}
+
+.footer .rightPane ul li:nth-last-child(2), .footer .rightPane ul li:nth-last-child(3) {
+	display: none;
+}
+
+.footer .rightPane p, .meetPage .D .rightPane p, .aboutPage .H .rightPane p, .howPage .F .rightPane p {
+	color:white;
+	font-family: GothamBk;
+	font-size: 11px;
+	position: absolute;
+	bottom:20px;
+	width:100%;
+	text-align: center;
+}
+
+.meetPage .D .rightPane img, .aboutPage .H .rightPane img, .howPage .F .rightPane img {
+	width:90px;
+	left:-75%;
+}
+
+.footer .rightPane .logoContainer {
+	display: table;
+	position: absolute;
+	left: 5%;
+	top:23%;
+}
+
+.footer .rightPane .logoContainer .logo {
+	width:70px;
+	display: block;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+
+.footer .rightPane .logoContainer .social a:nth-child(1) img {
+	width: 23px;
+	margin-bottom: -1px;
+}
+
+.footer .rightPane .logoContainer .social a:nth-child(2) img {
+	width: 10px;
+	margin-left:20px;
+}
+
+.footer .rightPane .logoContainer .social a:nth-child(3) img {
+	width: 22px;
+	margin-left:23px;
+	margin-bottom: -1px;
+}
+
+.meetPage .A {
+	background-color: transparent;
+	min-height:130px;
+	z-index: 2;
+}
+
+.meetPage .A a .logo {
+	display: inline-block;
+	width:55px;
+	margin-top: 43px;
+	margin-left:40px;
+}
+
+.meetPage .A .wrapper {
+	display: table;
+	position: absolute;
+	width:100%;
+	text-align: center;
+	top:45px;
+}
+
+.meetPage .A .searchContainer {
+	display: table;
+	margin:0 auto;
+	position: relative;
+}
+
+.meetPage .A .searchContainer .reset {
+	width:25px;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	margin:auto 0;
+	right:-55px;
+	cursor: pointer;
+}
+
+.meetPage .hamBurger {
+	margin-top:55px;
+}
+
+.meetPage .A .searchContainer .search {
+	font-family: GothamLT;
+	font-size: 30px;
+	color:#36A9E0;
+	display: inline-block;
+	float: left;
+	text-transform: uppercase;
+	line-height:40px;
+}
+
+.meetPage .A .searchContainer .dropDownBox, .meetPage .C .comparisonContainer .filters .dropDownBox {
+	font-size: 15px;
+	font-family: GothamMd;
+	text-transform: uppercase;
+	border-style: solid;
+	border-width: 1px;
+	float: left;
+	height:40px;
+	line-height: 43px;
+	width:200px;
+	text-align: center;
+	cursor: pointer;
+	overflow:hidden;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.meetPage .C .comparisonContainer .filters .dropDownContainer:last-child:after {
+	width:100%;
+	content: '';
+	height:0;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: #36A9E0;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.meetPage .C .comparisonContainer .filters .dropDownContainer:last-child:hover:after {
+	height:100%;
+}
+
+.meetPage .A .searchContainer .dropDownBox {
+	background-color: #FFFFFF
+}
+
+.meetPage .C .comparisonContainer .filters .dropDownBox {
+	border: solid 1px #FFFFFF;
+	color:#FFFFFF;
+}
+
+.meetPage .C .comparisonContainer .filters .dropDownContainer:last-child:hover .dropDownBox {
+	border-color: #36A9E0;
+}
+
+.meetPage .C .comparisonContainer .filters .dropDownContainer:last-child .dropDownBox:hover {
+	border:solid 1px #36A9E0 !important;
+}
+
+.meetPage .A .searchContainer .dropDown, .meetPage .C .comparisonContainer .filters .dropDown {
+	margin:0;
+	padding:0;
+	width:202px;
+	list-style: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: GothamMd;
+	font-size: 14px;
+	line-height: 40px;
+	background-color: #A5A5A5;
+	color:#FFFFFF;
+	position: absolute;
+	z-index: 2;
+	top:42px;
+	display: none;
+	max-height: 400px;
+	overflow: scroll;
+}
+
+.meetPage .A .searchContainer .dropDown li, .meetPage .C .comparisonContainer .filters .dropDown li{
+	border-top:solid 1px #DCDCDC;
+	cursor: pointer;
+	text-transform: capitalize;
+	line-height: 43px;
+	height: 40px;
+}
+
+.meetPage .A .searchContainer .dropDown li:first-child, .meetPage .C .comparisonContainer .filters .dropDown li:first-child{
+	border-top:none;
+}
+
+.meetPage .A .dropDownContainer input {
+	width:198px;
+	height:38px;
+	position: absolute;
+	border:solid 1px #95C122;
+	left:0;
+	top:0;
+	text-align: center;
+	font-size: 20px;
+	font-family: GothamLT;
+	line-height: 40px;
+	z-index: -1;
+	text-transform: uppercase;
+	color:#95C122;
+	outline: none !important;
+}
+
+.meetPage .B .wrapper {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	overflow: hidden;
+}
+
+.meetPage .B .wrapper .fullform {
+	display: table;
+	margin:0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.meetPage .B .wrapper .fullform .underlay {
+	width:100%;
+	height:100%;
+	background-color:#95C122;
+	position: absolute;
+}
+
+.meetPage .B .wrapper .fullform p {
+	position: relative;
+	font-family: gothamlt;
+	font-size:20px;
+	line-height: 50px;
+	padding:0 20px;
+	color: #FFFFFF;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+.meetPage .B {
+	background-image: url(../img/bg3.jpg);
+	background-size: 2000px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative;
+	background-position-x: 0 !important;
+}
+
+.meetPage .B .aboutContainer {
+	background-color: #95C122;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	text-align: center;
+	border: solid 1px #FFFFFF;
+	margin-top: -20px;
+	cursor: pointer;
+}
+
+.meetPage .B .aboutLink {
+	display: none;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+}
+
+.meetPage .B .aboutContainer p {
+	margin-top:19px;
+	color:#FFFFFF;
+	font-size: 18px;
+	line-height:21px;
+	font-family:GothamMd;
+}
+
+.meetPage .B .mapContainer {
+	width: 1000px;
+	height:510px;
+	z-index: 0;
+}
+
+.meetPage .B .mapContainer img{
+	width:100%;
+}
+
+.meetPage .B .mapContainer .tagContainer {
+	display: table;
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
+
+.meetPage .B .mapContainer .tagContainer .flagContainer {
+	height:30px;
+	width:45px;
+	overflow: hidden;
+	float: left;
+	cursor: pointer;
+}
+
+.meetPage .B .mapContainer .tagContainer .flagContainer img {
+	height: 100%;
+}
+
+.meetPage .B .mapContainer .tagContainer .priceTag {
+	position: relative;
+	z-index: 1;
+	font-family: GothamLT;
+	color:#747474;
+	font-size: 20px;
+	padding:0 10px;
+	cursor: pointer;
+	height: 30px;
+	line-height: 33px;
+	text-align: center;
+	float: left;
+}
+
+.meetPage .B .mapContainer .tagContainer .priceTag .overlay {
+	height:100%;
+	width:100%;
+	background-color: #FFFFFF;
+	opacity:0.8;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: -1;
+}
+
+.meetPage .B .mapContainer #usa {
+	top:183px;
+	left:144px;
+}
+
+.meetPage .B .mapContainer #mexico {
+	top:315px;
+	left:260px;
+}
+
+.meetPage .B .mapContainer #india {
+	top:210px;
+	left:655px;
+}
+
+.meetPage .B .mapContainer #thailand {
+	top: 260px;
+	left: 745px;
+}
+
+.meetPage .B .mapContainer #japan {
+	top:175px;
+	left:850px;
+}
+
+.meetPage .B .mapContainer #israel {
+	top: 210px;
+	left: 540px;
+}
+
+.meetPage .B .treatmentDesc {
+	width:70%;
+	background-color: #95C122;
+	position: absolute;
+	left:0;
+	right:0;
+	margin:0 auto;
+	z-index: 1;
+}
+
+.meetPage .B .wrapper .treatmentPrices {
+	display: table;
+	width:100%;
+	height:80%;
+	position: absolute;
+	left:-100%;
+	top:0;
+}
+
+.meetPage .B .wrapper .treatmentPrices .pull {
+	position: absolute;
+	top: 0;
+	bottom:0;
+	margin:auto 0;
+	width: 0px;
+	height: 0px;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-left: 20px solid #95C122;
+	right:-20px;
+	cursor: pointer;
+	display: none;
+}
+
+.meetPage .B .wrapper .treatmentPrices .helpText {
+	position: absolute;
+	right:18px;
+	top:18px;
+	color:#787878;
+	font-family: gothammd;
+	font-size: 14px;
+	cursor:pointer;
+	padding:0 20px;
+	background-color: #36A9E0;
+	color:#FFFFFF;
+	height:35px;
+	line-height: 37px;
+
+}
+
+.meetPage .B .wrapper .treatmentPrices .container {
+	display: table;
+	position: relative;
+	color:#787878;
+	font-family: GothamMd;
+	width: 96%;
+	line-height: 30px;
+	padding-left:4%;
+}
+
+.meetPage .B .wrapper .treatmentPrices .tableWrapper {
+	width:100%;
+	height:78%;
+	overflow: scroll;
+}
+
+.meetPage .B .wrapper .treatmentPrices .container .head {
+	display: table-row;
+}
+
+.meetPage .B .wrapper .treatmentPrices .container .row {
+	display: table-row;
+}
+
+.meetPage .B .wrapper .treatmentPrices .container .cell {
+	display: table-cell;
+	vertical-align: middle;
+	width:16%;
+	text-align: center;
+}
+
+.meetPage .B .wrapper .treatmentPrices .container .cell-flag p {
+	display: inline-block;
+	text-indent: 10px;
+}
+
+.meetPage .B .wrapper .treatmentPrices .container .row .cell {
+	line-height: 22px;
+	vertical-align: top;
+}
+
+.meetPage .B .wrapper .treatmentPrices .container .cell .flag {
+	width:30px;
+	display: inline-block;
+	margin-top: 8px;
+}
+
+.meetPage .B .wrapper .treatmentPrices .container .cell span {
+	padding:0 20px;
+	display: inline-block;
+	border: solid 1px #A6A6A6;
+	line-height: 22px;
+	padding-top:2px;
+	width:50%;
+}
+
+.meetPage .B .wrapper .treatmentPrices .container .spacer {
+	height:20px;
+}
+
+.meetPage .B .wrapper .treatmentPrices .container .cell:first-child {
+	width:20%;
+	text-align: left;
+}
+
+.meetPage .B .wrapper .treatmentPrices h1 {
+	color:#787878;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: GothamLT;
+	margin:0;
+	white-space: nowrap;
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	padding-left: 4%;
+}
+
+.meetPage .B .wrapper .treatmentPrices .alternativeText {
+	display: table;
+	width:100%;
+	text-align: center;
+	font-size: 14px;
+	color:#787878;
+}
+
+.meetPage .B .wrapper .treatmentPrices .alternativeText a {
+	color:#36A9E0;
+}
+
+.meetPage .B .wrapper .treatmentPrices .alternativeText a:hover {
+	text-decoration: underline;
+}
+
+.meetPage .B .wrapper .treatmentPrices ul {
+	width:85%;
+	margin:0 auto;
+	font-family: GothamMd;
+	color:#787878;
+	font-size: 18px;
+	position: relative;
+	list-style: none;
+	text-transform: capitalize;
+	padding: 0;
+	height: 76%;
+	overflow: scroll;
+}
+
+.meetPage .B .wrapper .treatmentPrices ul li {
+	float: left;
+	width: 100%;
+	margin-top:4%;
+}
+
+.meetPage .B .wrapper .treatmentPrices ul li span {
+	float:right;
+	border:solid 1px #787878;
+	padding: 0 15px;
+	margin-right:3%;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.meetPage .B .wrapper .treatmentPrices .overlay {
+	position: absolute;
+	height:100%;
+	width:100%;
+	background-color: #FFFFFF;
+	opacity: 0.9;
+}
+
+.meetPage .B .treatmentDesc .ornamentContainer {
+	display: table;
+	width:100%;
+}
+
+.meetPage .B .treatmentDesc p:first-child {
+	width:100%;
+	font-size: 30px;
+	font-family: GothamLT;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 95px;
+}
+
+.meetPage .B .treatmentDesc .statutory-warning {
+	color: #FFFFFF;
+	font-size: 10px;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+
+.meetPage .B .treatmentDesc .ornamentContainer {
+	margin-bottom:10px;
+}
+
+.meetPage .B .treatmentDesc .desc {
+	font-size: 14px;
+	font-family: GothamMd;
+	color:#FFFFFF;
+	text-align: center;
+	line-height: 22px;
+	margin-bottom:20px;
+	width:90%;
+	margin-left:5%;
+}
+
+.meetPage .C {
+	background-color: #FFFFFF;
+}
+
+.meetPage .C .comparisonContainer .filters {
+	position: absolute;
+	display: table;
+	width:100%;
+	text-align: center;
+	top:110px;
+	z-index: 1;
+	display: none;
+}
+
+.meetPage .C .comparisonContainer .filters p {
+	display: block;
+	font-family: GothamLT;
+	font-size: 26px;
+	line-height: 38px;
+	letter-spacing: 1px;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	text-align:center;
+}
+
+.meetPage .C .comparisonContainer {
+	width:70%;
+	margin:0 auto;
+	display: table;
+	background-color: #BCBEC0;
+	box-sizing:border-box;
+	margin-bottom: 5%;
+	margin-top: 20px;
+	position: relative;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+	cursor: default;
+}
+
+.meetPage .C .comparisonSubContainer {
+	display: table-row;
+}
+
+.meetPage .C .comparisonSubContainer:nth-child(18), .meetPage .C .comparisonSubContainer:nth-child(8), .meetPage .C .comparisonSubContainer:nth-child(9) {
+	display:none;
+}
+
+.meetPage .C .comparisonSubContainer:nth-last-child(2) {
+	display: none;
+}
+
+.meetPage .C .comparisonContainer .profile {
+	width:33%;
+	font-family: GothamMd;
+	box-sizing:border-box;
+	display: table-cell;
+	position: relative;
+}
+
+.meetPage .C .comparisonContainer .profile:nth-child(2) {
+	width: calc(34% - 2px);
+	border-left:solid 1px #FFFFFF;
+	border-right:solid 1px #FFFFFF;
+}
+
+.meetPage .C .comparisonContainer .profile .city, .meetPage .C .comparisonContainer .profile .name {
+	width:100%;
+	text-align: center;
+	font-size: 20px;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	margin-top:40px;
+	line-height: 27px;
+	font-family: GothamLT;
+}
+
+.meetPage .C .comparisonContainer .profile .country {
+	width:100%;
+	text-align: center;
+	font-size: 15px;
+	color:#3675B3;
+	margin-top:10px;
+	text-transform: uppercase;
+	font-family: GothamMd;
+}
+
+.meetPage .C .comparisonContainer .profile .pic {
+	display: block;
+	width:60%;
+	margin:0 auto;
+	margin-top:40px;
+}
+
+.meetPage .C .comparisonContainer .profile .special {
+	font-size: 18px;
+	color:#3675B3;
+	width:100%;
+	text-align: center;
+	margin-top:20px;
+	line-height: 24px;
+}
+
+.meetPage .C .comparisonContainer .profile .desc {
+	font-size:13px;
+	color:#FFFFFF;
+	text-align: center;
+	width:80%;
+	margin:0 auto;
+	line-height: 18px;
+}
+
+.meetPage .C .comparisonContainer .profile .more {
+	display: block;
+	text-align: center;
+	font-size: 13px;
+	color:#3675B3;
+	text-decoration: underline;
+	margin-top:15%;
+	cursor: pointer;
+}
+
+.meetPage .A .dropDownContainer {
+	display: table;
+	margin-left:40px;
+	position: relative;
+	float: left;
+	-webkit-user-select: none;
+}
+
+.meetPage .A .dropDownContainer:first-child {
+	margin-left:0;
+}
+
+.meetPage .C .dropDownContainer {
+	display: table;
+	position: relative;
+	margin:0 auto;
+	margin-top:35px;
+}
+
+.meetPage .C .comparisonContainer .profile .dropDownContainer:last-child .dropDownBox {
+	border: solid 1px #FFFFFF;
+}
+
+.meetPage .C .comparisonContainer .profile .price {
+	display: table;
+	margin:60px auto;
+	color:#666666;
+	font-size: 22px;
+	height:35px;
+	width:60%;
+	line-height: 35px;
+	text-align:center;
+	border: solid 1px #CCCCCC;
+}
+
+.meetPage .C .comparisonContainer .profile .action {
+	display: table;
+	margin:20% auto;
+	color:#FFFFFF;
+	font-size: 14px;
+	height:30px;
+	width:70%;
+	line-height: 30px;
+	text-align:center;
+	text-transform: uppercase;
+	border: solid 2px #FFFFFF;
+	font-family: GothamBk;
+	cursor:pointer;
+	position: relative;
+	z-index: 1;
+	background-color: transparent;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	padding-top: 2px;
+}
+
+.meetPage .C .comparisonContainer .profile .action:hover {
+	border-color: #95C122;
+}
+
+.meetPage .C .comparisonContainer .profile .action:after {
+	width:100%;
+	content: '';
+	height:0;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: #95C122;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.meetPage .C .comparisonContainer .profile .action:hover:after {
+	height:100%;
+}
+
+.meetPage .C .comparisonContainer .profile .close {
+	position: absolute;
+	top:10px;
+	right:10px;
+	width:25px;
+	cursor: pointer;
+	z-index: 1;
+	transition-duration: 0.3s;
+}
+
+.meetPage .wrapperDesktop {
+	width: 100%;
+}
+
+.meetPage .wrapperMobile {
+	display:none;
+	width: 100%;
+}
+
+.meetPage .A-mob h1 {
+	font-size: 25px;
+	margin:0;
+	color: #C6C6C6;
+	text-align: center;
+	font-family: GothamLT;
+	text-transform: uppercase;
+}
+
+.meetPage .A-mob .dropDownContainer {
+	display: table;
+	margin-top: 23px;
+	position: relative;
+	float: left;
+}
+
+.meetPage .A-mob .searchContainer {
+	display: table;
+	margin:0 auto;
+	width:97%;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+.meetPage .A-mob .dropDownContainer:nth-child(2) {
+	float: right;
+}
+
+.meetPage .A-mob .dropDownContainer:last-child {
+	float:none;
+	margin:0 auto;
+	margin-top:23px;
+}
+
+.meetPage .A-mob .searchContainer .dropDownBox {
+	font-size: 10px;
+	font-family: GothamMd;
+	color:#95C122;
+	text-transform: uppercase;
+	border: solid 1px #C6C6C6;
+	float: left;
+	height:25px;
+	line-height: 28px;
+	width:93px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.meetPage .A-mob .searchContainer .dropDown {
+	margin:0;
+	padding:0;
+	width:95px;
+	list-style: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: GothamMd;
+	font-size: 8px;
+	line-height: 25px;
+	background-color: #C6C6C6;
+	color:#FFFFFF;
+	position: absolute;
+	z-index: 2;
+	top:27px;
+	display: none;
+}
+
+.meetPage .A-mob .searchContainer .dropDown li{
+	border-top:solid 1px #B8B8B8;
+	cursor: pointer;
+	height: 25px;
+	line-height: 28px;
+}
+
+.meetPage .A-mob .searchContainer .dropDown li:first-child{
+	border-top:none;
+}
+
+.meetPage .A-mob .aboutContainer {
+	background-color: #95C122;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	text-align: center;
+	border: solid 1px #FFFFFF;
+	cursor: pointer;
+	margin: 10px auto;
+	display: none;
+}
+
+.meetPage .A-mob .aboutLink {
+	display: table;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+}
+
+.meetPage .A-mob .aboutContainer p {
+	margin-top:16px;
+	color:#FFFFFF;
+	font-size: 13px;
+	line-height:14px;
+	font-family:GothamMd;
+}
+
+.meetPage .A-mob .treatmentDesc {
+	width:97%;
+	background-color: #95C122;
+	position: relative;
+	left:0;
+	right:0;
+	margin:0 auto;
+	z-index: 1;
+	display: table;
+	margin-bottom:3%;
+}
+
+.meetPage .A-mob .treatmentDesc .ornamentContainer {
+	display: table;
+	width:100%;
+	position: relative;
+}
+
+.meetPage .A-mob .treatmentDesc .ornamentContainer img {
+	width:15px;
+	height:13px;
+}
+
+.meetPage .A-mob .treatmentDesc p:first-child {
+	width:100%;
+	font-size: 20px;
+	font-family: GothamMd;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 45px;
+}
+
+.meetPage .A-mob .treatmentDesc div:last-child {
+	font-size: 9px;
+	font-family: GothamMd;
+	color:#FFFFFF;
+	text-align: center;
+	line-height: 15px;
+	margin-bottom:15px;
+	width:90%;
+	margin-left:5%;
+}
+
+.meetPage .A-mob .treatmentDesc .ornamentContainer .left, .meetPage .A-mob .treatmentDesc .ornamentContainer .right {
+	width: 44%;
+	height: 2px;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.meetPage .A-mob .treatmentDesc .ornamentContainer {
+	margin-bottom: 3px;
+}
+
+.meetPage .A-mob .treatmentPrices {
+	display: table;
+	width:100%;
+	margin-bottom: 3%;
+}
+
+.meetPage .A-mob .treatmentPrices .row, .meetPage .A-mob .treatmentPrices .head {
+	display: table-row;
+}
+
+.meetPage .A-mob .treatmentPrices .head .cell {
+	display: table-cell;
+	font-family: GothamMd;
+	text-transform: uppercase;
+	width:50%;
+	font-size: 20px;
+	color:#787878;
+	text-align: left;
+	padding-left:12%;
+	vertical-align: middle;
+	height:35px;
+}
+
+.meetPage .A-mob .treatmentPrices .row .cell {
+	display: table-cell;
+	font-family: GothamMd;
+	text-transform: uppercase;
+	width:50%;
+	font-size: 13px;
+	line-height: 25px;
+	color:#787878;
+	text-align: left;
+	padding-left:12%;
+	vertical-align: middle;
+}
+
+.meetPage .B-mob {
+	background-color: #BCBEC0;
+	padding-top:5%;
+	float: none;
+	width:97%;
+	margin:0 auto;
+	margin-bottom: 5%;
+}
+
+.meetPage .B-mob .card {
+	display:table;
+	width:90%;
+	margin:0 auto;
+	padding: 4% 1%;
+	padding-top: 0;
+	font-family: GothamMd;
+	border-bottom: solid 2px #FFFFFF;
+	margin-bottom:3%;
+}
+
+.meetPage .B-mob .card .cell {
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
+}
+
+.meetPage .B-mob .card .cell:first-child {
+	width:30%;
+}
+
+.meetPage .B-mob .card .cell:first-child .image {
+	width:100%;
+	display: block;
+	background-image: url(../img/dp3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.meetPage .B-mob .card .cell:last-child {
+	width:65%;
+	padding-left: 5%;
+}
+
+.meetPage .B-mob .card .cell:last-child h1 {
+	margin:0;
+	color:#FFFFFF;
+	font-size: 13px;
+	font-family: GothamLt;
+}
+
+.meetPage .B-mob .card .cell:last-child h2 {
+	margin:0;
+	color:#3675B3;
+	font-size: 10px;
+	padding-top: 1%;
+}
+
+.meetPage .B-mob .card .cell:last-child .button {
+	text-transform: uppercase;
+	color:#FFFFFF;
+	font-size: 10px;
+	line-height: 17px;
+	border:solid 1px #FFFFFF;
+	display: table;
+	padding:0 7px;
+	padding-top:3px;
+	position: absolute;
+	bottom:0;
+	cursor: pointer;
+}
+
+.meetPage .B-mob .card .cell:last-child .button:nth-child(3) {
+	left:6%;
+}
+
+.meetPage .B-mob .card .cell:last-child .button:nth-child(4) {
+	right:0px;
+}
+
+.meetPage .B-mob .profile {
+	display:table;
+	width:90%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	font-family: GothamMd;
+	font-size: 11px;
+	color:#FFFFFF;
+	padding-bottom: 2%;
+	border-bottom: solid 2px #FFFFFF;
+	display: none;
+}
+
+.meetPage .B-mob .profile:last-child {
+	margin-bottom: 12px;
+}
+
+.meetPage .B-mob .profile .row {
+	display: table-row;
+}
+
+.meetPage .B-mob .profile .row:last-child {
+	display:none;
+}
+
+.meetPage .B-mob .profile .row .cell {
+	display: table-cell;
+	vertical-align: top;
+	padding-bottom: 5px;
+}
+
+.meetPage .B-mob .profile .row .cell:first-child {
+	width:30%;
+	color:#3675B3;
+}
+
+.meetPage .B-mob .profile .row .cell a {
+	cursor: pointer;
+	color:#3675B3;
+	text-decoration: underline;
+}
+
+.meetPage .B-mob .profile .row .cell:last-child {
+	width:70%;
+	padding-left:15px;
+	font-size: 11px;
+}
+
+.meetPage .readMore .container {
+	display: table !important;
+	position: relative;
+	margin:0 auto;
+	width:75%;
+	font-family: GothamLT;
+	color:#6C6C6C;
+}
+
+.meetPage .readMore .container .doctor {
+	font-size:30px;
+	text-transform: uppercase;
+	margin-top:2%;
+	margin-bottom: 6%;
+}
+
+.meetPage .readMore .container h2 {
+	font-size:18px;
+	font-family: GothamBd;
+	color:#797979;
+	text-align: left;
+}
+
+.meetPage .readMore .container h3 {
+	font-size:14px;
+	font-family: GothamMd;
+	color:#A0A0A0;
+	text-align: left;
+	margin-top:2%;
+	margin-bottom: 5%;
+}
+
+.meetPage .readMore .container .moreDesc {
+	margin-bottom: 10%;
+}
+
+.meetPage .readMore .logo {
+	width:280px;
+	margin:4% 0;
+}
+
+.adContainerB {
+	margin-bottom: 5%;
+	display: none !important;
+}
+
+.adContainerB .container {
+	display: table;
+	width:100%;
+}
+
+.adContainerB .container .spacer {
+	display:table-cell;
+	width:5%;
+	height:100%;
+}
+
+.galleryPage .adContainerB .container .spacer {
+	width:1.5%;
+}
+
+.adContainerB .container .ad {
+	display:table-cell;
+	width:42.5%;
+	height:100%;
+	color: #FFFFFF;
+	font-family: GothamLT;
+	font-size: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.adContainerB .container .ad:nth-child(2) {
+	background-color:#36A9E0;
+}
+
+.adContainerB .container .ad:nth-child(4) {
+	background-color:#95C122;
+}
+
+.aboutPage .C {
+	height:150px;
+}
+
+.aboutPage .C .banner {
+	width:100%;
+	height:150px;
+	background-image: url(../img/bg5.jpg);
+	background-position: center;
+	background-size: cover;
+	background-color: #95C122;
+	background-blend-mode: multiply;
+	position: relative;
+	margin-top:3%;
+}
+
+.aboutPage .C .banner .head {
+	height:60px;
+	line-height: 60px;
+	width:100%;
+	margin:0;
+	margin:auto;
+}
+
+.aboutPage .D .mainContainer {
+	display: table;
+	width:66%;
+	margin:0 auto;
+	margin-top: 25px;
+	margin-bottom:50px;
+}
+
+.aboutPage .D .mainContainer .subContainer {
+	display: table-row;
+	width:100%;
+	margin:0 auto;
+}
+
+.aboutPage .D .mainContainer .subContainer .container {
+	display: table-cell;
+	width:50%;
+}
+
+.aboutPage .D .mainContainer .subContainer:nth-child(2) .container {
+	vertical-align: middle;
+}
+
+.aboutPage .D .mainContainer .subContainer .container:nth-child(1) {
+	border-right:solid 1px #919191;
+	vertical-align: middle;
+}
+
+.aboutPage .D .mainContainer .subContainer .container .dp {
+	width:calc(100% - 50px);
+	height:100px;
+	margin:0 auto;
+	background-color: #FFFFFF;
+	background-position: bottom center;
+	background-size: 60%;
+	background-repeat: no-repeat;
+}
+
+.aboutPage .D .mainContainer .subContainer .container .name {
+	width:calc(100% - 50px);
+	margin:0 auto;
+	font-family: GothamLT;
+	font-size: 30px;
+	margin-top: 50px;
+	text-align: center;
+	color: #787878;
+}
+
+.aboutPage .D .mainContainer .subContainer .container .designation {
+	width:calc(100% - 50px);
+	margin:5% auto;
+	font-family: GothamBd;
+	color: #909090;
+	font-size: 13px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.aboutPage .D .mainContainer .subContainer .container .content {
+	width:calc(100% - 50px);
+	margin:0 auto;
+	font-family: GothamMd;
+	font-size: 15px;
+	line-height: 25px;
+	color:#787878;
+	margin-top: 5px;
+	text-align:center;
+}
+
+.aboutPage .D .mainContainer .subContainer .container:nth-child(1) .dp {
+	background-image: url(../img/ash.png);
+
+}
+
+.aboutPage .D .mainContainer .subContainer .container:nth-child(2) .dp {
+	background-image: url(../img/con.png);
+
+}
+
+.aboutPage .D .mainContainer .subContainer .container .link {
+	color:#36A9E0;
+	font-family: GothamMd;
+	float: right;
+	width:100%;
+	text-align: center;
+	text-decoration: none;
+	cursor:pointer;
+	margin-top:30px;
+	margin-bottom: 10px;
+}
+
+.aboutPage .D .mainContainer .subContainer .container .link:hover {
+	color:#95C122;
+}
+
+.aboutPage .E .mainContainer {
+	width:100%;
+	display: table;
+	margin-top:4%;
+	margin-bottom:4%;
+}
+
+.aboutPage .E .subContainer {
+	display: table-row;
+}
+
+.aboutPage .E .container {
+	display: table-cell;
+	width:33%;
+	border-left:solid 5px #FFFFFF;
+	border-right:solid 2px #FFFFFF;
+	margin:0 auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.aboutPage .E .container:first-child {
+	background-image: url(../img/mt1.jpg);
+}
+
+.aboutPage .E .container:nth-child(2) {
+	background-image: url(../img/mt2.jpg);
+}
+
+.aboutPage .E .container:nth-child(3) {
+	background-image: url(../img/mt3.jpg);
+}
+
+.aboutPage .F {
+	width:100%;
+	background-color: #36A9E0;
+	margin-top:4%;
+}
+
+.aboutPage .G .mainContainer {
+	width:100%;
+	display: table;
+	margin:10% 0;
+}
+
+.aboutPage .G .mainContainer .container, .homePage .D .mainContainer .container {
+	width:100%;
+	display: table-row;
+}
+
+.aboutPage .G .mainContainer .container .subContainer {
+	display: table-cell;
+	position: relative;
+	min-width:252px;
+	height:262px;
+	-webkit-perspective: 700px;
+	perspective: 700px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 1s;
+	transition: 1s;
+}
+
+.aboutPage .G .mainContainer .container .subContainer .containerA {
+	display: table;
+	border-bottom: solid 10px #C6C6C6;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 3;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform:rotateY(0deg);
+	transition: 1s;
+}
+
+.aboutPage .G .mainContainer .container .subContainer .circle {
+	width:252px;
+	height:252px;
+	text-align: center;
+	text-transform: uppercase;
+	color:#787878;
+	font-size: 20px;
+	line-height: 25px;
+	font-family: GothamLT;
+	position: relative;
+	float:left;
+}
+
+.aboutPage .G .mainContainer .container .subContainer .circle img {
+	width:90%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	top:0;
+}
+
+.aboutPage .G .mainContainer .container .subContainer .circleB {
+	width:169px;
+	height:169px;
+	margin:40px;
+	border-radius:50%;
+	border: solid 2px #95C122;
+	position: absolute;
+	top:0;
+}
+
+.aboutPage .G .mainContainer .container .subContainer .circle p {
+	margin-top:95px;
+}
+
+.aboutPage .G .mainContainer .container .spacer {
+	display: table-cell;
+	width:35%;
+	height:100%;
+}
+
+.aboutPage .G .mainContainer .container .spacer:first-child, .aboutPage .G .mainContainer .container .spacer:last-child {
+	width:15%;
+}
+
+.aboutPage .G .mainContainer .container .subContainer .containerB {
+	height:262px;
+	width:252px;
+	background-color: #A5A5A5;
+	position: absolute;
+	top:0;
+	left:0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+	transition: 1s;
+}
+
+.aboutPage .G .mainContainer .container .subContainer .containerB .border {
+	width:100%;
+	height:10px;
+	background-color: #95C122;
+	border-top:solid 1px white;
+	position: absolute;
+	bottom:0;
+}
+
+.aboutPage .G .mainContainer .container .subContainer .containerB p:first-child {
+	font-size: 20px;
+	line-height: 25px;
+	text-align: center;
+	font-family: GothamLT;
+	text-transform: uppercase;
+	color:white;
+	margin-top:25px;
+	margin-bottom: 9px;
+	display: none;
+}
+
+.aboutPage .G .mainContainer .container .subContainer .containerB p:nth-child(2) {
+	font-size: 13px;
+	line-height: 17px;
+	text-align: center;
+	font-family: Gothammd;
+	color:#FFFFFF;
+	width:85%;
+	display: table;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+}
+
+.readMore {
+	width:100%;
+	background-color:#FFFFFF;
+	position: fixed;
+	top:0;
+	z-index: 101;
+	overflow-y: scroll;
+	display: none;
+}
+
+.readMore .close {
+	width:40px;
+	float: right;
+	margin:15px;
+	cursor: pointer;
+	z-index: 1;
+	position: relative;
+}
+
+.readMore .container {
+	text-align: center;
+	font-family: GothamMd;
+	width: 65%;
+	display: none;
+	margin-top:5%;
+}
+
+.readMore .container h1 {
+	font-family: GothamBd;
+	color:#919191;
+	font-size: 20px;
+	margin:0;
+	padding:0;
+	line-height: 30px;
+}
+
+.readMore .container h2 {
+	font-family: GothamMd;
+	margin:0;
+	padding:0;
+	font-size: 18px;
+	color:#36A9E0;
+}
+
+.readMore .container .heading {
+	display:block;
+	text-transform: uppercase;
+	font-family: GothamBk;
+	margin-top: 3%;
+	margin-bottom: 1%;
+	color:#36A9E0;
+}
+
+.readMore .container .dash {
+	color:#36A9E0;
+	font-size: 20px;
+	line-height: 15px;
+	display: block;
+}
+
+.aboutPage .readMore .container {
+	width:70%;
+}
+
+.readMore .container p {
+	color: #747474;
+	font-size: 15px;
+	margin-top:3%;
+	line-height: 25px;
+}
+
+.aboutPage .readMore .container p span {
+	display: block;
+	margin-top:4%;
+	margin-bottom: 1%;
+	color:#36A9E0;
+	font-size: 30px;
+}
+
+
+.howPage .A {
+	background-color: #FFFFFF;
+	min-height:90px;
+}
+
+.header .logo {
+	display: inline-block;
+	width:55px;
+	margin-top: 21px;
+	margin-left:40px;
+	position: relative;
+	z-index: 1;
+}
+
+.howPage .B .banner {
+	height:100%;
+	width:100%;
+	background-image: url(../img/bg6.jpg);
+	background-size:cover;
+	background-position: center;
+	background-color: #36A9E0;
+	background-blend-mode: multiply;
+}
+
+.howPage .B .banner p, .howPage .D .banner p {
+	font-family: GothamLT;
+	font-size: 40px;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+	height:90px;
+	line-height: 90px;
+}
+
+.howPage .C {
+	padding:5% 0;
+}
+
+.howPage .C .headContainer .content {
+	font-size: 15px;
+	color:#757575;
+	font-family: GothamMd;
+	line-height: 25px;
+	width:75%;
+	margin:0 auto;
+	text-align: center;
+}
+
+.howPage .C .headContainer .ornamentContainer {
+	margin-top:4%;
+	margin-bottom: 6%;
+}
+
+.howPage .C .headContainer .ornamentContainer .left, .howPage .C .headContainer .ornamentContainer .right {
+	background-color: #95C122;
+}
+
+.howPage .C .howOptions {
+	width:100%;
+	height:200px;
+	text-align: center;
+	position: relative;
+	margin-bottom:5%;
+}
+
+.howPage .C .howOptions:last-child {
+	margin-bottom:0;
+}
+
+.howPage .C .howOptions .option {
+	color:#36A9E0;
+	font-family: GothamLT;
+	font-size: 40px;
+	text-transform: uppercase;
+	display: inline-block;
+	cursor:pointer;
+}
+
+.howPage .C .howOptions .option span {
+	display: table;
+	position: relative;
+}
+
+.howPage .C .howOptions .option span img {
+	display: block;
+	height:200px;
+}
+
+.howPage .C .howOptions .option span p {
+	position: absolute;
+	line-height: 215px;
+	text-align: center;
+	font-family: GothamLT;
+	font-size: 35px;
+	color:#787878;
+}
+
+.howPage .C .howOptions .option:first-child {
+	margin-right:15%;
+}
+
+.howPage .C .howOptions .option .info {
+	height:200px;
+	width:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	display: table;
+	line-height: initial;
+}
+
+.howPage .C .howOptions .option:nth-child(2) .info {
+	margin-left: 100%;
+}
+
+.howPage .C .howOptions .option .info .text {
+	background-color:#95C122;
+	width:55%;
+	height:100%;
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	text-align: right;
+}
+
+.howPage .C .howOptions .option .info .text .desc {
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: 1px;
+	text-transform: none;
+	color: #FFFFFF;
+	display: inline-block;
+	text-align: center;
+	width: 85%;
+	font-family: GothamMd;
+	padding: 0 7.5%;
+}
+
+.howPage .C .howOptions .option .info .text .desc span {
+	width:100%;
+	color:#FFFFFF;
+	font-size: 25px;
+	font-family: GothamBk;
+	margin-bottom: 2%;
+	line-height: 26px;
+}
+
+.howPage .C .howOptions .option .info .text .letter {
+	font-size: 40px;
+	line-height: 35px;
+	letter-spacing: 1px;
+	text-transform: none;
+	color:#666666;
+	display: inline-block;
+	width:100%;
+	text-align: center;
+}
+
+.howPage .C .howOptions .option .info .step {
+	display: table-cell;
+	height:100%;
+	vertical-align: middle;
+	position: relative;
+	width:45%;
+}
+
+.howPage .C .howOptions .option .info .step img {
+	display:block;
+	width:200px;
+	position: absolute;
+}
+
+.howPage .C .howOptions .option .info .step .number {
+	width:100%;
+	font-family: GothamLT;
+	color:#C6C6C6;
+	font-size: 25px;
+	text-align: center;
+}
+
+.howPage .D .banner {
+	width:100%;
+	height:100%;
+	background-image: url(../img/bg7.jpg);
+	background-position: center;
+	position: relative;
+	background-color: #36A9E0;
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.howPage .E .container {
+	display: table;
+	width:80%;
+	padding:5% 0;
+	margin: 0 auto;
+}
+
+.howPage .E .container .row {
+	display: table-row;
+}
+
+.howPage .E .container .row .cell {
+	display:table-cell;
+	width:50%;
+	padding:0 5%;
+	text-align: center;
+	font-family: GothamMd;
+	font-size: 15px;
+	line-height: 25px;
+	color:#787878;
+}
+
+.howPage .E .container .row .cell span {
+	display: block;
+	font-size: 20px;
+	color:#36A9E0;
+}
+
+.howPage .E .container .row .cell .button {
+	font-family: GothamBk;
+	font-size: 13px;
+	text-transform: uppercase;
+	color:#999999;
+	line-height: 30px;
+	border:solid 2px #C6C6C6;
+	width:200px;
+	margin:0 auto;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.howPage .E .container .row .cell .button:after {
+	width:100%;
+	content: '';
+	height:0;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: #95C122;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.howPage .E .container .row .cell .button:hover {
+	border-color:#95C122;
+	color:#FFFFFF;
+}
+
+.howPage .E .container .row .cell .button:hover:after {
+	height:100%;
+}
+
+.howPage .E .container .row:first-child .cell:first-child {
+	border-right:solid 1px #C6C6C6;
+	padding-bottom:20px;
+}
+
+.howPage .E .container .row:last-child .cell:first-child {
+	padding-top:20px;
+}
+
+.destinationsPage .A .mainContainer .backgroundContainer p {
+	color:#FFFFFF;
+	line-height: 90px;
+}
+
+.destinationsPage .B .container {
+	display: table;
+	width:100%;
+	margin:0 auto;
+	margin-top:10%;
+	position: relative;
+}
+
+.destinationsPage .B .subContainer {
+	display: table;
+	width:900px;
+	position: relative;
+	margin:0 auto;
+	margin-bottom:125px;
+}
+
+.destinationsPage .B .container .subContainer .absolute {
+	width:600px;
+	height:350px;
+	background-image: url(../img/india1.jpg);
+}
+
+.destinationsPage .B .container .subContainer .relative {
+	position: absolute;
+}
+
+.destinationsPage .B .container .subContainer .relative:nth-child(2) {
+	width: 400px;
+	height:300px;
+	top: 10%;
+	right: 0%;
+	background-image: url(../img/india2.jpg);
+	background-size: 500px;
+	background-position-y: 100%;
+}
+
+.destinationsPage .B .container .subContainer .relative:nth-child(3) {
+	width: 300px;
+	height:200px;
+	bottom: -35%;
+	right: 18%;
+	background-image: url(../img/india3.jpg);
+	background-size: 300px;
+	background-position-y: 25%;
+}
+
+.destinationsPage .B .container .band {
+	width:100%;
+	height:150px;
+	background-color:#1193D2;
+	opacity: 0.8;
+	position: absolute;
+	top:30%;
+}
+
+.destinationsPage .B .container .country {
+	top:30%;
+	font-family: GothamLT;
+	font-size: 40px;
+	line-height: 150px;
+	text-align: center;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+}
+
+.destinationsPage .B .head {
+	font-family: GothamLT;
+	color:white;
+	font-size: 40px;
+	width:100%;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top:4%;
+	margin-bottom: 2%;
+	color:#36A9E0;
+}
+
+.destinationsPage .B .ornamentContainer {
+	display:table;
+	margin:0 auto;
+	width:60%;
+	position: relative;
+	margin-bottom: 2%
+}
+
+.destinationsPage .B .ornamentContainer .left, .destinationsPage .B .ornamentContainer .right {
+	width:45%;
+	height:2px;
+	background-color: #36A9E0;
+	margin-bottom: 10px;
+}
+
+.destinationsPage .B .ornamentContainer img {
+	width:20px;
+	height:17px;
+	position: absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	top:-10px;
+}
+
+.destinationsPage .B  .ornamentContainer .left {
+	float:left;
+}
+
+.destinationsPage .B  .ornamentContainer .right {
+	float:right;
+}
+
+.destinationsPage .B .content {
+	width:60%;
+	margin:0 auto;
+	font-family:GothamMd;
+	color:#787878;
+	font-size:15px;
+	text-align: center;
+	line-height: 25px;
+	margin-bottom:3%;
+}
+
+.destinationsPage .C .container {
+	display: table;
+	width:100%;
+	margin:0 auto;
+	margin-top:6%;
+	position: relative;
+}
+
+.destinationsPage .C .subContainer {
+	display: table;
+	width:900px;
+	position: relative;
+	margin:0 auto;
+	margin-bottom:160px;
+}
+
+.destinationsPage .C .container .subContainer .absolute {
+	width:600px;
+	height:320px;
+	background-image: url(../img/thai2.jpg);
+	background-size: 100%;
+}
+
+.destinationsPage .C .container .subContainer .relative {
+	position: absolute;
+}
+
+.destinationsPage .C .container .subContainer .relative:nth-child(2) {
+	width: 400px;
+	height:300px;
+	top: 10%;
+	right: 0%;
+	background-image: url(../img/thai1.jpg);
+	background-size: 500px;
+	background-position-y: 100%;
+}
+
+.destinationsPage .C .container .subContainer .relative:nth-child(3) {
+	width: 400px;
+	height:200px;
+	bottom: -50%;
+	right: 18%;
+	background-image: url(../img/thai3.jpg);
+	background-size: 100%;
+	background-position-y: 25%;
+}
+
+.destinationsPage .C .container .band {
+	width:100%;
+	height:150px;
+	background-color:#93CC00;
+	opacity: 0.8;
+	position: absolute;
+	top:30%;
+}
+
+.destinationsPage .C .container .country {
+	left:15%;
+	top:30%;
+	font-family: GothamLT;
+	font-size: 40px;
+	line-height: 150px;
+	text-align: left;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	position: absolute;
+	z-index: 1;
+}
+
+.destinationsPage .C .head {
+	font-family: GothamLT;
+	color:white;
+	font-size: 40px;
+	width:60%;
+	text-align: center;
+	padding-left: 7%;
+	text-transform: uppercase;
+	margin-top:4%;
+	margin-bottom: 2%;
+	color:#95C122;
+}
+
+.destinationsPage .C .ornamentContainer {
+	display:table;
+	margin:0 auto;
+	width:60%;
+	position: relative;
+	margin-bottom: 2%;
+	margin-left:7%;
+}
+
+.destinationsPage .C .ornamentContainer .left, .destinationsPage .C .ornamentContainer .right {
+	width:45%;
+	height:2px;
+	background-color: #95C122;
+	margin-bottom: 10px;
+}
+
+.destinationsPage .C .ornamentContainer img {
+	width:20px;
+	height:17px;
+	position: absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	top:-10px;
+}
+
+.destinationsPage .C  .ornamentContainer .left {
+	float:left;
+}
+
+.destinationsPage .C  .ornamentContainer .right {
+	float:right;
+}
+
+.destinationsPage .C .content {
+	width:60%;
+	margin-left:7%;
+	font-family:GothamMd;
+	color:#787878;
+	font-size:15px;
+	text-align: center;
+	line-height: 25px;
+	margin-bottom:3%;
+}
+
+.destinationsPage .D .container {
+	display: table;
+	width:100%;
+	margin:0 auto;
+	margin-top:6%;
+	position: relative;
+}
+
+.destinationsPage .D .subContainer {
+	display: table;
+	width:780px;
+	position: relative;
+	margin:0 auto;
+	margin-bottom:88px;
+}
+
+.destinationsPage .D .container .subContainer .absolute {
+	width:500px;
+	height:400px;
+	background-image: url(../img/uae1.jpg);
+	background-size: 100%;
+	background-position-y: 35%;
+}
+
+.destinationsPage .D .container .subContainer .relative {
+	position: absolute;
+}
+
+.destinationsPage .D .container .subContainer .relative:nth-child(2) {
+	width: 350px;
+	height:300px;
+	top: 10%;
+	right: 0%;
+	background-image: url(../img/uae2.jpg);
+	background-size: 100%;
+}
+
+.destinationsPage .D .container .subContainer .relative:nth-child(3) {
+	width: 300px;
+	height:200px;
+	bottom: -22%;
+	right: 18%;
+	background-image: url(../img/uae3.jpg);
+	background-size: 100%;
+	background-position-y: 25%;
+}
+
+.destinationsPage .D .container .band {
+	width:100%;
+	height:150px;
+	background-color:#C6C6C6;
+	opacity: 0.8;
+	position: absolute;
+	top:30%;
+}
+
+.destinationsPage .D .container .country {
+	right:15%;
+	top:30%;
+	font-family: GothamLT;
+	font-size: 40px;
+	line-height: 150px;
+	text-align: right;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	position: absolute;
+	z-index: 1;
+}
+
+.destinationsPage .D .head {
+	font-family: GothamLT;
+	font-size: 40px;
+	width:60%;
+	text-align: center;
+	padding-right: 7%;
+	text-transform: uppercase;
+	margin-top:4%;
+	margin-bottom: 2%;
+	color:#C6C6C6;
+	float:right;
+}
+
+.destinationsPage .D .ornamentContainer {
+	display:table;
+	margin:0 auto;
+	width:60%;
+	position: relative;
+	margin-bottom: 2%;
+	margin-right:7%;
+}
+
+.destinationsPage .D .ornamentContainer .left, .destinationsPage .D .ornamentContainer .right {
+	width:45%;
+	height:2px;
+	background-color: #C6C6C6;
+	margin-bottom: 10px;
+}
+
+.destinationsPage .D .ornamentContainer img {
+	width:20px;
+	height:17px;
+	position: absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	top:-10px;
+}
+
+.destinationsPage .D  .ornamentContainer .left {
+	float:left;
+}
+
+.destinationsPage .D  .ornamentContainer .right {
+	float:right;
+}
+
+.destinationsPage .D .content {
+	width:60%;
+	margin-right:7%;
+	font-family:GothamMd;
+	color:#787878;
+	font-size:23px;
+	text-align: center;
+	line-height: 25px;
+	margin-bottom:10%;
+	float: right;
+}
+
+.destinationsPage .E {
+
+	background-color: #95C122;
+}
+
+
+.destinationsPage .E .rightPane {
+	width:100%;
+	height:100%;
+	float: right;
+	position: relative;
+}
+
+.destinationsPage .E .rightPane ul {
+	list-style: none;
+	text-transform: uppercase;
+	color:white;
+	font-family: GothamLT;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	display: table;
+	margin:0;
+	padding:0;
+	float:right;
+	margin:30px auto;
+	margin-right:70px;
+}
+
+.destinationsPage .E .rightPane p {
+	color:white;
+	font-family: GothamMd;
+	font-size: 11px;
+	position: absolute;
+	bottom:20px;
+	width:100%;
+	text-align: center;
+}
+
+.destinationsPage .E .rightPane img {
+	width:90px;
+	left:-75%;
+}
+
+.contactPage .A {
+	background-color: #FFFFFF;
+	min-height:90px;
+}
+
+.contactPage .A .logo {
+	display: inline-block;
+	width:55px;
+	margin-top: 21px;
+	margin-left:40px;
+}
+
+.contactPage .B .banner {
+	height:100%;
+	width:100%;
+	background-image: url(../img/bg9.png);
+	background-size:cover;
+	background-position: bottom;
+	background-color: #36A9E0;
+	background-blend-mode: multiply;
+}
+
+.contactPage .B .banner p {
+	font-family: GothamLT;
+	font-size: 50px;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+	height:90px;
+	line-height: 90px;
+}
+
+.contactPage .C .head {
+	font-family: GothamLT;
+	font-size: 40px;
+	width:60%;
+	text-align: center;
+	margin:0 auto;
+	text-transform: uppercase;
+	margin-top:4%;
+	margin-bottom: 2%;
+	color:#787878;
+}
+
+.contactPage .C .ornamentContainer {
+	display:table;
+	margin:0 auto;
+	width:60%;
+	position: relative;
+	margin-bottom: 2%;
+}
+
+.contactPage .C .ornamentContainer .left, .contactPage .C .ornamentContainer .right {
+	width:45%;
+	height:2px;
+	background-color: #C6C6C6;
+	margin-bottom: 10px;
+}
+
+.contactPage .C .ornamentContainer img {
+	width:20px;
+	height:17px;
+	position: absolute;
+	left:0;
+	right:0;
+	margin:auto;
+	top:-10px;
+}
+
+.contactPage .C  .ornamentContainer .left {
+	float:left;
+}
+
+.contactPage .C  .ornamentContainer .right {
+	float:right;
+}
+
+.contactPage .C .enquiryForm {
+	width:100%;
+	display:table;
+	margin-top:4%;
+	margin-bottom:10%;
+	text-align: center;
+}
+
+.contactPage .C .enquiryForm .container {
+	display: table;
+	margin:0 auto;
+	margin-top:3%;
+	position: relative;
+}
+
+.contactPage .C .enquiryForm .container:first-child {
+	margin-top:0;
+}
+
+.contactPage .C .enquiryForm .container input, .contactPage .C .enquiryForm .container textarea {
+	border:solid 1px #808080;
+	width:250px;
+	margin-right:20px;
+	font-size: 16px;
+	text-align: center;
+	font-family: GothamMd;
+	padding-top:13px;
+	padding-bottom:12px;
+	outline-color: #C6C6C6;
+}
+
+.enquiryForm .tnc input {
+	width: 20px !important;
+	height: 15px !important;
+}
+
+.enquiryForm .tnc {
+	font-family: gothamBk;
+	color:#787878;
+	font-size: 16px;
+	display: none !important;
+}
+
+.enquiryForm .tnc p {
+	display: inline-block;
+}
+
+.enquiryForm .tnc a {
+	color:#36A9E0;
+}
+
+.enquiryForm .tnc a:hover {
+	text-decoration: underline;
+}
+
+.contactPage .C .enquiryForm .container:first-child input:last-child {
+	margin-right:0;
+}
+
+.contactPage .C .enquiryForm .container input::-webkit-input-placeholder {
+	font-family:GothamMd;
+	text-align: center;
+}
+
+.contactPage .C .enquiryForm .container:last-child input, .contactPage .C .enquiryForm .container:nth-last-child(2) input {
+	border:solid 2px #36A9E0;
+	color:#36A9E0;
+	background-color: #FFFFFF;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-right:0;
+	background-color: transparent;
+	z-index: 1;
+	position: relative;
+	font-family: GothamBk !important;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.contactPage .C .enquiryForm .container:last-child:after {
+	width:100%;
+	content: '';
+	height:0;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: #36A9E0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.contactPage .C .enquiryForm .container:last-child:hover:after {
+	height:100%;
+}
+
+.contactPage .C .enquiryForm .container:last-child input:hover {
+	color:#FFFFFF;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.contactPage .C .enquiryForm .container:nth-last-child(2) input {
+	border:solid 2px #95C122;
+	background-color: #FFFFFF;
+	color:#95C122;
+	position: relative;
+	margin-right: 0;
+	font-family: GothamBk !important;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.contactPage .C .enquiryForm .container:nth-last-child(2):after {
+	width:100%;
+	content: '';
+	height:0;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: #95C122;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.contactPage .C .enquiryForm .container:nth-last-child(2) input:hover {
+	color:#FFFFFF;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.contactPage .C .enquiryForm .container:nth-last-child(2):hover:after {
+	height:100%;
+}
+
+.contactPage .C .enquiryForm .container textarea {
+	width:520px;
+	height:80px;
+}
+
+.contactPage .C .head:first-child {
+	color:#787878;
+}
+
+.contactPage .C .address{
+	font-family: GothamMd;
+	color: #818181;
+	font-size: 16px;
+	line-height: 35px;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.contactPage .D {
+
+	background-color: #95C122;
+}
+
+
+.contactPage .D .rightPane {
+	width:100%;
+	height:100%;
+	float: right;
+	position: relative;
+}
+
+.contactPage .D .rightPane ul {
+	list-style: none;
+	text-transform: uppercase;
+	color:white;
+	font-family: GothamLT;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+	display: table;
+	margin:0;
+	padding:0;
+	float:right;
+	margin:30px auto;
+	margin-right:70px;
+}
+
+.contactPage .D .rightPane p {
+	color:white;
+	font-family: GothamMd;
+	font-size: 11px;
+	position: absolute;
+	bottom:20px;
+	width:100%;
+	text-align: center;
+}
+
+.contactPage .D .rightPane img {
+	width:90px;
+	left:-75%;
+}
+
+.galleryPage .A .mainContainer {
+	width:100%;
+	background-color: white;
+	position: relative;
+	float: left;
+	height:100%;
+}
+
+.galleryPage .A .mainContainer .backgroundContainer {
+	width:100%;
+	height:100%;
+	background-image: url(../img/bg10.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: #95C122;
+	background-blend-mode: multiply;
+}
+
+.galleryPage .A .mainContainer p {
+	display: table;
+	font-family: GothamLT;
+	font-size: 40px;
+	color:white;
+	width:370px;
+	height:90px;
+	line-height: 90px;
+	z-index: 1;
+	text-align: center;
+}
+
+.galleryPage .B .mainContainer {
+	width:calc(100% - 30px);
+	display: table;
+	margin:7% auto;
+}
+
+.galleryPage .B .mainContainer .container {
+	display: table;
+	float: left;
+	width:33%;
+	height:500px;
+}
+
+.galleryPage .B .mainContainer .container:nth-child(2) {
+	width:calc(34% - 30px);
+	border-right:solid 15px #FFFFFF;
+	border-left:solid 15px #FFFFFF;
+}
+
+.galleryPage .B .mainContainer .container .image {
+	width:100%;
+	background-color: #616161;
+	border-bottom:solid 15px #FFFFFF;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.galleryPage .B .mainContainer .container .image:hover {
+	transition:All 0.1s ease;
+	transform: scale(1.04);
+}
+
+.galleryPage .B .mainContainer .container:first-child .image:first-child {
+	background-image: url(../img/gal9.jpg);
+}
+
+.galleryPage .B .mainContainer .container:first-child .image:nth-child(2) {
+	background-image: url(../img/gal8.jpg);
+}
+
+.galleryPage .B .mainContainer .container:first-child .image:nth-child(3) {
+	background-image: url(../img/gal1.jpg);
+}
+
+.galleryPage .B .mainContainer .container:nth-child(2) .image:first-child {
+	background-image: url(../img/gal2.jpg);
+}
+
+.galleryPage .B .mainContainer .container:nth-child(2) .image:nth-child(2) {
+	background-image: url(../img/gal3.jpg);
+}
+
+.galleryPage .B .mainContainer .container:nth-child(2) .image:nth-child(3) {
+	background-image: url(../img/gal4.jpg);
+}
+
+.galleryPage .B .mainContainer .container:nth-child(3) .image:nth-child(1) {
+	background-image: url(../img/gal5.jpg);
+}
+
+.galleryPage .B .mainContainer .container:nth-child(3) .image:nth-child(2) {
+	background-image: url(../img/gal6.jpg);
+}
+
+.galleryPage .B .mainContainer .container:nth-child(3) .image:nth-child(3) {
+	background-image: url(../img/gal7.jpg);
+	background-position: right center;
+}
+
+.galleryPage .A a .logo {
+	display: inline-block;
+	width:55px;
+	margin-top: 21px;
+	margin-left:40px;
+	position: relative;
+}
+
+.galleryPage .outerOverlay {
+	height:100%;
+	width:100%;
+	background-color: #000000;
+	position: absolute;
+	top:0;
+	bottom:0;
+	z-index: 3;
+	opacity: 0.5;
+	display: none;
+}
+
+.galleryPage .expansion {
+	width:80%;
+	background-color: #616161;
+	z-index: 4;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	max-width: 550px;
+	left:0;
+	right:0;
+	margin:0 auto;
+	display: none;
+}
+
+.galleryPage .expansion .close {
+	width:40px;
+	margin:15px;
+	float:right;
+	cursor: pointer;
+}
+
+.aboutMeetPage .B .container {
+	width:70%;
+	display: table;
+	margin:4% auto;
+	text-align: center;
+	color:#787878;
+	font-family: GothamMd;
+	font-size: 15px;
+	line-height:25px;
+}
+
+.aboutMeetPage .B .container span {
+	display: block;
+	color:#36A9E0;
+}
+
+.aboutMeetPage .A .mainContainer .container {
+	display: table;
+	width: 100%;
+}
+
+.aboutMeetPage .A .mainContainer .buttonContainer {
+	display: table;
+	width:240px;
+	margin:0 auto;
+	margin-top:5%;
+	cursor: pointer;
+	position: relative;
+}
+
+.aboutMeetPage .A .mainContainer .buttonContainer:after {
+	width:100%;
+	content: '';
+	height:0;
+	position: absolute;
+	top:0;
+	left:2px;
+	background-color: #95C122;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.aboutMeetPage .A .mainContainer .buttonContainer .button {
+	width:100%;
+	line-height: 33px;
+	padding-top:5px;
+	text-transform: uppercase;
+	border:solid 2px #95C122;
+	font-family: GothamMd;
+	color:white;
+	font-size: 20px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	background-color: #95C122;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.aboutMeetPage .A .mainContainer .buttonContainer .button:hover {
+	border-color: #95C122;
+	transform: scale(1.1);
+}
+
+.aboutMeetPage .A .mainContainer .buttonContainer:hover:after {
+	height:100%;
+}
+
+.advisoryPage .B .mainContainer {
+	display: table;
+	width:100%;
+	margin-top: 12%;
+	margin-bottom:10%;
+}
+
+.advisoryPage .B .mainContainer .subContainer {
+	display: table-row;
+}
+
+.advisoryPage .B .mainContainer .subContainer .container {
+	display: table-cell;
+	width:48%;
+}
+
+.advisoryPage .B .mainContainer .subContainer .container:first-child {
+	padding-left:8%;
+	padding-right:4%;
+	border-right:solid 1px #919191;
+}
+
+.advisoryPage .B .mainContainer .subContainer .container:last-child {
+	padding-right:8%;
+	padding-left:4%;
+}
+
+.advisoryPage .B .mainContainer .subContainer .spacer {
+	display: table-cell;
+	height:100px;
+	width:8%;
+}
+
+.advisoryPage .B .mainContainer .subContainer .spacer:nth-child(3) {
+	border-right:solid 1px #919191;
+}
+
+.advisoryPage .B .mainContainer .subContainer .container .dp {
+	width:calc(100% - 50px);
+	height:100px;
+	margin:0 auto;
+	background-color: #FFFFFF;
+	background-position: bottom center;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	margin-top:6%;
+}
+
+.advisoryPage .B .mainContainer .subContainer .container .name {
+	width:calc(100% - 50px);
+	margin:0 auto;
+	font-family: GothamLT;
+	font-size: 30px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	color:#787878;
+}
+
+.advisoryPage .B .mainContainer .subContainer .container .designation {
+	width:calc(100% - 50px);
+	margin:0 auto;
+	font-family: GothamBd;
+	letter-spacing: 1px;
+	font-size: 13px;
+	margin-bottom: 20px;
+	color:#909090;
+	margin-top: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.advisoryPage .B .mainContainer .subContainer .container .content {
+	width:calc(100% - 50px);
+	margin:0 auto;
+	font-family: GothamMd;
+	font-size: 15px;
+	line-height: 25px;
+	color:#787878;
+	margin-top: 5px;
+	text-align:center;
+}
+
+.advisoryPage .B .mainContainer .subContainer .container:nth-child(1) .dp {
+	background-image: url(../img/pan.png);
+
+}
+
+.advisoryPage .B .mainContainer .subContainer .container:nth-child(2) .dp {
+	background-image: url(../img/meh.png);
+
+}
+
+.advisoryPage .B .mainContainer .subContainer .container .link {
+	color:#36A9E0;
+	font-family: GothamMd;
+	float: right;
+	width:100%;
+	text-align: center;
+	text-decoration: none;
+	cursor:pointer;
+	margin-top:40px;
+	margin-bottom: 4%;
+}
+
+.advisoryPage .B .mainContainer .subContainer .container .link:hover {
+	color: #95C122;
+}
+
+.tncPage .B {
+	margin-bottom: 8%;
+}
+
+.tncPage .term {
+	font-family:GothamBd;
+	font-size: 15px;
+	color:#616161;
+	width:80%;
+	margin:0 auto;
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+.tncPage .desc {
+	font-family:GothamMd;
+	font-size: 14px;
+	color:#858585;
+	line-height: 20px;
+	width:80%;
+	margin:0 auto;
+}
+
+.tncPage .desc ol li {
+	margin-top:7px;
+}
+
+.ayurvedaPage .B p {
+	width: 70%;
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+	color: #747474;
+	font-family: GothamMd;
+	font-size: 15px;
+	line-height: 26px;
+	margin-top: 3%;
+}
+
+.ayurvedaPage .B p span {
+	display: block;
+	color: #36A9E0;
+	font-size: 30px;
+	font-family: gothamlt;
+}
+
+.ayurvedaPage .C ul {
+	display: table;
+	margin:0;
+	padding:0;
+	list-style: none;
+	margin:0 auto;
+	width:1000px;
+	margin-bottom: 10%;
+	font-family: GothamLT;
+	text-align:center;
+	font-size: 25px;
+	color:#FFFFFF;
+}
+
+.ayurvedaPage .C ul li {
+	width:280px;
+	height:280px;
+	margin-left:8%;
+	float: left;
+	margin-top: 8%;
+	-webkit-perspective: 700px;
+	perspective: 700px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.ayurvedaPage .C ul li .container {
+	width:100%;
+	height:100%;
+	position: relative;
+	-webkit-perspective: 700px;
+	perspective: 700px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 1s;
+	transform-style: preserve-3d;
+	transition: transform 1s ease 0s;
+}
+
+.ayurvedaPage .C ul li .container .heads {
+	top: 0;
+	left: 0;
+	z-index: 3;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: rotateY(0deg);
+	height:100%;
+	width:100%;
+	background-color: green;
+	display:table;
+	background-image:url(../img/ayurveda1.jpg);
+	background-color: #95C122;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-blend-mode: multiply;
+	background-size: cover;
+	transition: 1s;
+}
+
+.ayurvedaPage .C ul li .container .heads p {
+	display: table-cell;
+	vertical-align: middle;
+	height:100%;
+	width: 100%;
+}
+
+.ayurvedaPage .C ul li .container .tails {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+	width:100%;
+	height:100%;
+	background-color: #95C122;
+	display: table;
+	transition: 1s;
+}
+
+.ayurvedaPage .C ul li .container .tails .wrapper {
+	display: table-cell;
+	width:100%;
+	height:100%;
+	vertical-align: middle;
+}
+
+.ayurvedaPage .C ul li .container .tails .wrapper p {
+	font-size: 16px;
+	line-height:26px;
+	width:80%;
+	margin:0 auto;
+}
+
+.ayurvedaPage .C ul li:nth-child(1), .ayurvedaPage .C ul li:nth-child(4), .ayurvedaPage .C ul li:nth-child(7), .ayurvedaPage .C ul li:nth-child(10) {
+	margin-left:0;
+}
+
+.registrationPage .B .banner {
+	height:100%;
+	width:100%;
+	background-image: url(../img/bg9.png);
+	background-size:cover;
+	background-position: bottom;
+	background-color: #36A9E0;
+	background-blend-mode: multiply;
+}
+
+.registrationPage .B .banner p {
+	font-family: GothamLT;
+	font-size: 50px;
+	color:#FFFFFF;
+	text-transform: uppercase;
+	text-align: center;
+	height:90px;
+	line-height: 90px;
+}
+
+.registrationPage .C .enquiryForm {
+	width:100%;
+	display:table;
+	margin-top:4%;
+	margin-bottom:10%;
+	text-align: center;
+}
+
+.registrationPage .C .enquiryForm .container {
+	display: table;
+	margin:0 auto;
+	margin-top:3%;
+	position: relative;
+	z-index: 0;
+}
+
+.registrationPage .C .enquiryForm .container:first-child {
+	margin-top:0;
+}
+
+.registrationPage .C .enquiryForm .container input, .registrationPage .C .enquiryForm .container textarea {
+	border:solid 1px #808080;
+	width:250px;
+	margin-right:20px;
+	font-size: 16px;
+	text-align: center;
+	font-family: GothamMd;
+	padding-top:13px;
+	padding-bottom:12px;
+	outline-color: #C6C6C6;
+}
+
+.registrationPage .C .enquiryForm .container:first-child input:last-child {
+	margin-right:0;
+}
+
+.registrationPage .C .enquiryForm .container input::-webkit-input-placeholder {
+	font-family:GothamMd;
+	text-align: center;
+}
+
+.registrationPage .C .enquiryForm .container:last-child input, .registrationPage .C .enquiryForm .container:nth-last-child(3) input {
+	border:solid 2px #95C122;
+	background-color: transparent;
+	color:#95C122;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: GothamBk;
+	margin-right: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.registrationPage .C .enquiryForm .container:last-child:after {
+	width:100%;
+	content: '';
+	height:0;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: #95C122;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.registrationPage .C .enquiryForm .container:last-child {
+	margin-top:1.5%;
+}
+
+.registrationPage .C .enquiryForm .container:last-child:hover:after {
+	height:100%;
+}
+
+.registrationPage .C .enquiryForm .container:last-child:hover input {
+	color:#FFFFFF;
+}
+
+.registrationPage .C .enquiryForm .container textarea {
+	width:520px;
+	height:80px;
+}
+
+.registrationPage .C .address{
+	font-family: GothamMd;
+	color: #818181;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 35px;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.registrationPage .C .head {
+	text-align: center;
+	font-family: GothamLT;
+	font-size: 30px;
+	text-transform: uppercase;
+	line-height: 50px;
+	color:#808080;
+	margin-top:5%;
+}
+
+.registrationPage .C .head p:nth-child(2) {
+	color:#95C122;
+	font-family:GothamBd;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.registrationPage .C .head p:last-child {
+	font-size: 15px;
+	font-family: GothamMd;
+	line-height: 30px;
+	color: #36A9E0;
+}
+
+.registrationPage .C .enquiryForm .container:nth-last-child(3) input {
+	padding:0 !important;
+	background-color: transparent;
+	border:none !important;
+	max-height: 46px;
+	outline:none !important;
+	position: relative;
+	color:#FFFFFF !important;
+	z-index: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.registrationPage .C .enquiryForm .container:nth-last-child(3) input::before {
+	content: 'UPLOAD REPORTS';
+	font-size: 15px;
+	background-color: transparent;
+	color: #36A9E0;
+	font-family: GothamBk;
+	letter-spacing: 1px;
+	border: none;
+	outline: none;
+	display: inline-block;
+	white-space: nowrap;
+	outline: none;
+	-webkit-user-select: none;
+	cursor: pointer;
+	width:calc(100% - 4px);
+	text-align: center;
+	line-height: 42px;
+	border: solid 2px #36A9E0;
+	position: relative;
+	z-index: 2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.registrationPage .C .enquiryForm .container:nth-last-child(3) input::after {
+	width:100%;
+	height:0;
+	content: '';
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: #36A9E0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	z-index: 1;
+}
+
+.registrationPage .C .enquiryForm .container:nth-last-child(3) input:hover:after {
+	height:100%;
+}
+
+.registrationPage .C .enquiryForm .container:nth-last-child(3) input:hover:before {
+	color:#FFFFFF;
+}
+
+.registrationPage .C .enquiryForm .container:nth-last-child(3) input::-webkit-file-upload-button {
+	visibility: hidden;
+}
+
+.registrationPage .C .enquiryForm .container:nth-last-child(2) {
+	margin-top:1%;
+}
+
+.registrationPage .C .enquiryForm .container:nth-last-child(3) p {
+	font-family: GothamMd;
+	font-size: 13px;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	color: #787878;
+}
+
+
+@media only screen and (min-width : 1101px) {
+	.aboutPage .F {
+		height:150px;
+	}
+
+	.aboutPage .F .ornamentContainer {
+		margin-top:72px;
+	}
+
+	.meetPage .B .mapContainer {
+		width: 1100px;
+		height: 490px;
+	}
+
+	.meetPage .B .mapContainer #usa {
+		top: 205px;
+		left: 165px;
+	}
+
+	.meetPage .B .mapContainer #mexico {
+		top: 360px;
+		left: 295px;
+	}
+
+	.meetPage .B .mapContainer #india {
+		top: 260px;
+		left: 740px;
+	}
+
+	.meetPage .B .mapContainer #thailand {
+		top: 300px;
+		left: 810px;
+	}
+
+	.meetPage .B .mapContainer #japan {
+		top: 200px;
+		left: 920px;
+	}
+
+	.meetPage .B .mapContainer #israel {
+		top: 235px;
+		left: 595px;
+	}
+
+	.destinationsPage .B .subContainer {
+		width:1050px;
+		margin-bottom: 132px;
+	}
+
+	.destinationsPage .B .container .subContainer .absolute {
+		width: 700px;
+		height: 400px;
+	}
+
+	.destinationsPage .B .container .subContainer .relative:nth-child(2) {
+		width: 500px;
+		height: 400px;
+		top: -5%;
+		background-repeat: no-repeat;
+	}
+
+	.destinationsPage .B .container .subContainer .relative:nth-child(3) {
+		width: 350px;
+		height: 250px;
+		bottom: -33%;
+		right: 25%;
+	}
+
+	.destinationsPage .B .container .band, .destinationsPage .C .container .band {
+		top:33%;
+		height:180px;
+	}
+
+	.destinationsPage .B .container .country, .destinationsPage .C .container .country {
+		top:33%;
+		line-height:180px;
+		font-size: 50px;
+	}
+
+	.destinationsPage .B .container {
+		margin-top:10%;
+	}
+
+	.destinationsPage .B .head {
+		margin-top:6%;
+	}
+
+	.destinationsPage .C .subContainer {
+		width:1050px;
+		margin-bottom: 140px;
+	}
+
+	.destinationsPage .C .container .subContainer .absolute {
+		width: 700px;
+		height: 420px;
+	}
+
+	.destinationsPage .C .container .subContainer .relative:nth-child(2) {
+		width: 500px;
+		height: 400px;
+		top: -2%;
+		background-repeat: no-repeat;
+	}
+
+	.destinationsPage .C .container .subContainer .relative:nth-child(3) {
+		width: 450px;
+		height: 250px;
+		bottom: -33%;
+		right: 22%;
+	}
+
+	.destinationsPage .D .subContainer {
+		width: 950px;
+		margin-bottom: 84px;
+	}
+
+	.destinationsPage .D .container .subContainer .absolute {
+		width: 600px;
+		height: 500px;
+	}
+
+	.destinationsPage .D .container .subContainer .relative:nth-child(2) {
+		width: 450px;
+		height: 350px;
+		top: 20%;
+	}
+
+	.destinationsPage .D .container .subContainer .relative:nth-child(3) {
+		width: 350px;
+		height: 250px;
+		bottom: -19%;
+		right: 18%;
+		background-repeat: no-repeat;
+	}
+
+	.destinationsPage .D .container .band {
+		height: 180px;
+		top: 36%;
+	}
+
+	.destinationsPage .D .container .country {
+		line-height: 180px;
+		font-size: 50px;
+		top:36%;
+	}
+
+}
+
+@media only screen and (max-width : 1100px) {
+	.mainOrnamentContainer {
+		width:45px;
+	}
+
+	.mainOrnamentContainer .greyConatiner .rest, .mainOrnamentContainer .greenConatiner .rest {
+		width: 29px;
+		margin-right:7px;
+	}
+
+	.mainOrnamentContainer .restContainer {
+		width:45px;
+	}
+
+	.mainOrnamentContainer .greenConatiner .fillContainer {
+		width:36px;
+		bottom:9px;
+		right: 8px;
+	}
+
+	.homePage .B .mainContainer .container .spacer:first-child, .homePage .B .mainContainer .container .spacer:last-child, .homePage .D .mainContainer .container .spacer:first-child, .homePage .D .mainContainer .container .spacer:last-child, .aboutMeetPage .C .mainContainer .container .spacer:first-child, .aboutMeetPage .C .mainContainer .container .spacer:last-child, .aboutPage .G .mainContainer .container .spacer:first-child, .aboutPage .G .mainContainer .container .spacer:last-child {
+		width:10%;
+	}
+
+	.homePage .B .mainContainer .container .spacer, .homePage .D .mainContainer .container .spacer, .aboutMeetPage .C .mainContainer .container .spacer, .aboutPage .G .mainContainer .container .spacer {
+		width:10%;
+	}
+
+	.homePage .B .mainContainer .container .subContainer, .homePage .D .mainContainer .container .subContainer, .aboutMeetPage .C .mainContainer .container .subContainer, .aboutPage .G .mainContainer .container .subContainer {
+		min-width: 200px;
+		height:210px;
+		margin-left:10px;
+		margin-right:10px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .circle, .homePage .D .mainContainer .container .subContainer .circle, .aboutMeetPage .C .mainContainer .container .subContainer .circle, .aboutPage .G .mainContainer .container .subContainer .circle {
+		width:200px;
+		height:210px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .containerB, .homePage .D .mainContainer .container .subContainer .containerB, .aboutMeetPage .C .mainContainer .container .subContainer .containerB, .aboutPage .G .mainContainer .container .subContainer .containerB {
+		height:220px;
+		width:200px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .containerB p:first-child, .homePage .D .mainContainer .container .subContainer .containerB p:first-child, .aboutMeetPage .C .mainContainer .container .subContainer .containerB p:first-child, .aboutPage .G .mainContainer .container .subContainer .containerB p:first-child {
+		display: none;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .containerB p:nth-child(2), .homePage .D .mainContainer .container .subContainer .containerB p:nth-child(2), .aboutMeetPage .C .mainContainer .container .subContainer .containerB p:nth-child(2), .aboutPage .G .mainContainer .container .subContainer .containerB p:nth-child(2) {
+		padding:0 5.5%;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .circle p, .homePage .D .mainContainer .container .subContainer .circle p {
+		font-size: 18px;
+		margin-top:60px;
+	}
+
+	.homePage .D .mainContainer .container .perspective:nth-child(4) .subContainer .circle p {
+		margin-top: 72px;
+	}
+
+	.aboutMeetPage .C .mainContainer .container .subContainer .circle p, .aboutPage .G .mainContainer .container .subContainer .circle p {
+		margin-top:73px;
+	}
+
+	.homePage .C .head, .homePage .F .head, .aboutPage .B .head, .aboutPage .C .banner .head, .aboutPage .E .head, .howPage .E .head {
+		font-size: 35px;
+		margin-top: 3%;
+	}
+
+	.homePage .C .content, .aboutPage .B .content, .aboutPage .E .content, .homePage .F .content {
+		font-size: 13px;
+		line-height: 22px;
+	}
+
+	.homePage .B .head, .homePage .D .head {
+		font-size: 35px;
+	}
+
+	.homePage .C .content, .aboutPage .B .content, .aboutPage .E .content, .homePage .F .content {
+		width:70%;
+	}
+
+	.A .mainContainer .head, .contactPage .B .banner p {
+		font-size: 45px;
+	}
+
+	.homePage .A .mainContainer .desc {
+		font-size: 18px;
+	}
+
+	.homePage .A .mainContainer .buttonContainer {
+		width:220px;
+	}
+
+	.homePage .A .mainContainer .buttonContainer .button {
+		font-size: 18px;
+		line-height: 33px;
+	}
+
+	.aboutPage .D .mainContainer {
+		width:75%;
+	}
+
+	.aboutPage .D .mainContainer .subContainer .container .content {
+		font-size: 13px;
+		line-height: 22px;
+	}
+
+	.aboutPage .F .ornamentContainer {
+		margin-top:7%;
+		margin-bottom:6%;
+	}
+
+	.howPage .C .headContainer .content {
+		font-size: 13px;
+		line-height: 22px;
+	}
+
+	.howPage .C .howOptions .option span img, .howPage .C .howOptions, .howPage .C .howOptions .option .info {
+		height:175px;
+	}
+
+	.howPage .C .howOptions .option span p {
+		line-height:185px;
+	}
+
+	.contactPage .C .enquiryForm .container input, .registrationPage .C .enquiryForm .container input {
+		width:220px;
+	}
+
+	.contactPage .C .enquiryForm .container textarea, .registrationPage .C .enquiryForm .container textarea {
+		width:464px;
+	}
+
+	.meetPage .C .comparisonContainer .filters p {
+		font-size: 23px;
+		line-height: 30px;
+	}
+
+	.meetPage .C .dropDownContainer {
+		margin-top:30px;
+	}
+
+	.meetPage .C .comparisonContainer .filters .dropDownBox {
+		font-size: 14px;
+		height: 30px;
+		line-height: 33px;
+		width: 150px;
+	}
+
+	.meetPage .C .comparisonContainer .filters .dropDown {
+		top:37px;
+		width:172px;
+	}
+
+	.ayurvedaPage .C ul li {
+		width:200px;
+		height:200px;
+		margin-left:8%;
+		margin-top:8%;
+	}
+
+	.ayurvedaPage .C ul {
+		width:715px;
+		font-size: 21px;
+	}
+
+	.ayurvedaPage .C ul li .container .tails .wrapper p {
+		font-size: 14px;
+		line-height: 21px;
+	}
+
+	.meetPage .A .searchContainer .dropDownBox {
+		font-size: 12px;
+		height: 30px;
+		line-height: 33px;
+		width: 150px;
+	}
+
+	.meetPage .A .searchContainer .dropDown, .meetPage .C .comparisonContainer .filters .dropDown {
+		width:152px;
+		top:32px;
+	}
+
+	.meetPage .A .searchContainer .dropDown, .meetPage .C .comparisonContainer .filters .dropDown {
+		line-height: 30px;
+		font-size: 12px;
+		font-family: GothamMd;
+	}
+
+	.meetPage .A .searchContainer .dropDown li, .meetPage .C .comparisonContainer .filters .dropDown li {
+		height:30px;
+		line-height: 33px;
+	}
+
+	.meetPage .A .searchContainer .dropDownContainer input {
+		font-size: 16px;
+		height: 28px;
+		line-height: 30px;
+		width: 148px;
+	}
+
+	.meetPage .A .dropDownContainer {
+		margin-left:30px;
+	}
+
+	.meetPage .A {
+		height:110px;
+		min-height:110px;
+	}
+
+	.meetPage .B .aboutContainer {
+		width:60px;
+		height:60px;
+		margin-top:-20px;
+	}
+
+	.meetPage .A .search {
+		font-size: 30px;
+	}
+
+	.meetPage .hamBurger {
+		margin-top:45px !important;
+	}
+
+	.meetPage .A a .logo {
+		width: 45px;
+		margin-top: 36px;
+		margin-left: 30px;
+	}
+
+	.meetPage .B .aboutContainer p {
+		margin-top: 15px;
+		font-size: 14px;
+		line-height: 15px;
+	}
+
+	.meetPage .A .searchContainer .search {
+		font-size: 24px;
+		line-height: 31px;
+	}
+
+	.meetPage .A .searchContainer .radio .option:first-child {
+		margin-top: 2px;
+	}
+
+	.meetPage .A .searchContainer .radio .option:last-child {
+		margin-top: 6px;
+	}
+
+	.meetPage .A .searchContainer .radio .option .circle {
+		height: 9px;
+		width: 9px;
+	}
+
+	.meetPage .A .searchContainer .radio .option p {
+		font-size: 12px;
+		line-height: 11px;
+		font-family: GothamMd;
+	}
+
+	.meetPage .A .wrapper {
+		top:40px;
+	}
+
+}
+
+@media only screen and (max-width : 1023px) {
+	.meetPage .B .mapContainer {
+		width: 900px;
+		height: 480px;
+	}
+
+	.meetPage .B .mapContainer #usa {
+		top: 165px;
+		left: 130px;
+	}
+
+	.meetPage .B .mapContainer #mexico {
+		top: 285px;
+		left: 235px;
+	}
+
+	.meetPage .B .mapContainer #india {
+		top: 180px;
+		left: 580px;
+	}
+
+	.meetPage .B .mapContainer #thailand {
+		top: 230px;
+		left: 670px;
+	}
+
+	.meetPage .B .mapContainer #japan {
+		top: 165px;
+		left: 755px;
+	}
+
+	.meetPage .B .mapContainer #israel {
+		top: 185px;
+		left: 490px;
+	}
+
+	.destinationsPage .B .subContainer {
+		width: 710px;
+		margin-bottom: 50px;
+	}
+
+	.destinationsPage .B .container .subContainer .absolute {
+		width: 450px;
+		height: 270px;
+		background-size: 500px;
+		background-position-y: 54%;
+	}
+
+	.destinationsPage .B .container .subContainer .relative:nth-child(2) {
+		width: 300px;
+		height: 180px;
+		top: 21%;
+		background-size: 350px;
+	}
+
+	.destinationsPage .B .container .subContainer .relative:nth-child(3) {
+		width: 220px;
+		height: 130px;
+		bottom: -18%;
+		right: 24%;
+		background-size: 300px;
+		background-position-y: 25%;
+	}
+
+	.destinationsPage .B .container .country {
+		top: 36%;
+		font-size: 35px;
+		line-height: 107px;
+	}
+
+	.destinationsPage .B .container .band {
+		height: 100px;
+		top:36%;
+	}
+
+	.destinationsPage .B .head {
+		font-size: 35px;
+		margin-top:6%;
+	}
+
+	.destinationsPage .B .content {
+		font-size: 13px;
+	}
+
+	.destinationsPage .C .subContainer {
+		width: 710px;
+		margin-bottom: 65px;
+	}
+
+	.destinationsPage .C .container .subContainer .absolute {
+		width: 470px;
+		height: 280px;
+	}
+
+	.destinationsPage .C .container .subContainer .relative:nth-child(2) {
+		width: 300px;
+		height: 200px;
+		top: 18%;
+	}
+
+	.destinationsPage .C .container .subContainer .relative:nth-child(3) {
+		width: 250px;
+		height: 150px;
+		bottom: -23%;
+		right: 18%;
+		background-position-y: 25%;
+	}
+
+	.destinationsPage .C .container .band {
+		height: 100px;
+		top:34%;
+	}
+
+	.destinationsPage .C .container .country {
+		top: 34%;
+		font-size: 35px;
+		line-height: 107px;
+	}
+
+	.destinationsPage .C .head {
+		margin-top:6%;
+		font-size:35px;
+	}
+
+	.destinationsPage .C .content {
+		font-size: 13px;
+	}
+
+	.destinationsPage .D .subContainer {
+		width:605px;
+		margin-bottom: 39px;
+	}
+
+	.destinationsPage .D .container .subContainer .absolute {
+		width: 400px;
+		height: 300px;
+	}
+
+	.destinationsPage .D .container .subContainer .relative:nth-child(2) {
+		width: 250px;
+		height: 190px;
+		top: 19%;
+	}
+
+	.destinationsPage .D .container .subContainer .relative:nth-child(3) {
+		width: 200px;
+		height: 120px;
+		bottom: -13%;
+		right: 18%;
+	}
+
+	.destinationsPage .D .container .country {
+		top: 40%;
+		font-size: 35px;
+		line-height: 107px;
+	}
+
+	.destinationsPage .D .container .band {
+		height: 100px;
+		top:40%;
+	}
+
+	.destinationsPage .D .head {
+		font-size: 35px;
+	}
+
+	.destinationsPage .D .content {
+		font-size: 13px;
+	}
+
+	.meetPage .B .treatmentDesc, .meetPage .C .comparisonContainer {
+		width:75%;
+	}
+
+}
+
+@media only screen and (max-width : 959px) {
+	.meetPage .B .wrapper .fullform p {
+		font-size:16px;
+		line-height: 40px;
+	}
+
+	.lightbox .container {
+		width:75%;
+	}
+	.meetPage .B .treatmentDesc, .meetPage .C .comparisonContainer {
+		width:85%;
+	}
+
+	.mainOrnamentContainer {
+		display: none;
+	}
+
+	.meetPage .B {
+		height:500px !important;
+	}
+
+	.meetPage .B .mapContainer {
+		width:750px;
+		height:400px;
+	}
+
+	.meetPage .B .mapContainer .tagContainer .flagContainer {
+		height:25px;
+		width:40px;
+	}
+
+	.meetPage .B .mapContainer .tagContainer .priceTag {
+		height:25px;
+		line-height:26px;
+		font-size: 16px;
+	}
+
+	.meetPage .B .mapContainer #usa {
+		top: 135px;
+		left: 105px;
+	}
+
+	.meetPage .B .mapContainer #mexico {
+		top: 235px;
+		left: 195px;
+	}
+
+	.meetPage .B .mapContainer #india {
+		top: 150px;
+		left: 490px;
+	}
+
+	.meetPage .B .mapContainer #thailand {
+		top: 205px;
+		left: 560px;
+	}
+
+	.meetPage .B .mapContainer #japan {
+		top: 135px;
+		left: 604px;
+	}
+
+	.meetPage .B .mapContainer #israel {
+		top: 155px;
+		left: 405px;
+	}
+
+	.meetPage .A .searchContainer .dropDown {
+		width: 152px;
+		top:32px;
+		line-height: 30px;
+		font-size: 12px;
+	}
+
+	.meetPage .readMore .container .doctor {
+		font-size: 25px;
+		margin-bottom: 10%;
+	}
+
+	.meetPage .readMore .container h2 {
+		font-size: 15px;
+	}
+
+	.meetPage .readMore .container h3 {
+		font-size: 13px;
+		margin-top:1%;
+	}
+
+	.meetPage .A .searchContainer .search {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 767px) {
+
+	.mainOrnamentContainer {
+		display: none;
+	}
+
+	section {
+		min-height:0px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .circle, .homePage .D .mainContainer .container .subContainer .circle, .aboutMeetPage .C .mainContainer .container .subContainer .circle, .aboutPage .G .mainContainer .container .subContainer .circle {
+		height:120px;
+		width:120px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .containerA, .homePage .D .mainContainer .container .subContainer .containerA, .aboutMeetPage .C .mainContainer .container .subContainer .containerA, .aboutPage .G .mainContainer .container .subContainer .containerA {
+		border-bottom: solid 6px #C6C6C6;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .circle p, .homePage .D .mainContainer .container .subContainer .circle p, .aboutPage .G .mainContainer .container .subContainer .circle p, .aboutMeetPage .C .mainContainer .container .subContainer .circle p {
+		font-size: 12px;
+		margin-top: 35px;
+		line-height: 15px;
+	}
+
+	.homePage .D .mainContainer .container .perspective:nth-child(4) .subContainer .circle p {
+		margin-top: 45px;
+	}
+
+	.aboutPage .G .mainContainer .container .subContainer .circle p {
+		margin-top:45px;
+	}
+
+	.aboutPage .B .content span {
+		white-space: normal;
+	}
+
+	.homePage .B .mainContainer .container .subContainer, .homePage .D .mainContainer .container .subContainer, .aboutMeetPage .C .mainContainer .container .subContainer, .aboutPage .G .mainContainer .container .subContainer {
+		min-width: 120px;
+		height: 126px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .containerB .border, .homePage .D .mainContainer .container .subContainer .containerB .border, .aboutMeetPage .C .mainContainer .container .subContainer .containerB .border, .aboutPage .G .mainContainer .container .subContainer .containerB .border {
+		height:6px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .containerB, .homePage .D .mainContainer .container .subContainer .containerB, .aboutMeetPage .C .mainContainer .container .subContainer .containerB, .aboutPage .G .mainContainer .container .subContainer .containerB {
+		width:120px;
+		height:126px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .containerB p:nth-child(2), .homePage .D .mainContainer .container .subContainer .containerB p:nth-child(2), .aboutMeetPage .C .mainContainer .container .subContainer .containerB p:nth-child(2), .aboutPage .G .mainContainer .container .subContainer .containerB p:nth-child(2) {
+		font-size: 7px;
+		line-height: 9px;
+		width: 93%;
+	}
+
+	.header {
+		height:55px !important;
+		min-height: 55px;
+		display: block;
+	}
+
+	.homePage .header .mainLogo {
+		width:100px;
+		position: relative;
+		display: inline-block;
+		margin: 9px;
+		margin-bottom: 0;
+		margin-left: 12px;
+	}
+
+	.hamBurger .bar {
+		width:32px;
+	}
+
+	.homePage .hamBurger {
+		margin-top:17px;
+		margin-right:30px;
+	}
+
+	.homePage .A .ornamentContainer {
+		height:20px;
+	}
+
+	.homePage .A .mainContainer .desc {
+		font-size:12px;
+		line-height: 17px;
+		font-family: GothamMd;
+	}
+
+	.A .mainContainer .head, .contactPage .B .banner p, .galleryPage .A .mainContainer p, .howPage .B .banner p, .howPage .D .banner p, .registrationPage .B .banner p {
+		font-size: 30px;
+	}
+
+	.homePage .A .mainContainer .buttonContainer .button, .aboutMeetPage .A .mainContainer .buttonContainer .button {
+		font-size: 15px;
+		line-height:27px;
+		padding-top:3px;
+	}
+
+	.homePage .A .mainContainer .buttonContainer, .aboutMeetPage .A .mainContainer .buttonContainer {
+		width:175px;
+	}
+
+	.homePage .A .mainContainer {
+		height:280px !important;
+	}
+
+	.adContainerA, .homePage .adContainerB {
+		line-height: 50px !important;
+		height:50px !important;
+		font-size: 30px;
+	}
+
+	.homePage .B .logo {
+		width:35px;
+	}
+
+	.homePage .B .head, .homePage .D .head {
+		font-size: 25px;
+	}
+
+	.homePage .B .subHead {
+		font-size: 12px;
+	}
+
+	.homePage .C .head, .homePage .F .head, .aboutPage .B .head, .aboutPage .C .banner .head, .aboutPage .E .head, .howPage .E .head {
+		font-size: 25px;
+	}
+
+	.ornamentContainer img {
+		width:15px;
+		height: 13px;
+	}
+
+	.homePage .C .ornamentContainer {
+		margin-bottom:1%;
+		width:75%;
+	}
+
+	.homePage .C .content, .aboutPage .B .content, .aboutPage .E .content, .homePage .F .content {
+		font-size: 11px;
+		line-height: 17px;
+		width:80%;
+	}
+
+	.homePage .F .partnersContainer .subContainer:first-child .container p {
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.homePage .F .partnersContainer .subContainer:first-child .container {
+		vertical-align: middle;
+	}
+
+	.homePage .F .partnersContainer .subContainer:last-child .container p {
+		font-size: 10px;
+		line-height: 14px;
+	}
+
+	.footer .rightPane ul {
+		font-size: 15px;
+		line-height: 30px;
+		margin-right:30px;
+	}
+
+	.footer .rightPane {
+		height:225px !important;
+	}
+
+	.footer .rightPane .logoContainer .logo {
+		width:60px;
+	}
+
+	.header .logo {
+		width:40px;
+		margin-top: 11px;
+		margin-left: 20px;
+	}
+
+	.hamBurger {
+		margin-top:17px !important;
+		margin-right:30px;
+	}
+
+	.hamBurger p {
+		font-size: 10px;
+		line-height: 14px;
+		margin-top: 2px;
+	}
+
+	.meetPage .hamBurger {
+		margin-top:45px !important;
+	}
+
+	.meetPage .wrapperMobile .hamBurger {
+		margin-top:16px !important;
+	}
+
+	.aboutPage .A .mainContainer, .aboutMeetPage .A .mainContainer, .advisoryPage .A .mainContainer, .contactPage .B .banner, .destinationsPage .A .mainContainer, .galleryPage .A .mainContainer, .howPage .B .banner, .ayurvedaPage .A .mainContainer, .registrationPage .B .banner, .aboutPage .A, .aboutMeetPage .A, .advisoryPage .A, .contactPage .B, .destinationsPage .A, .galleryPage .A, .howPage .B, .ayurvedaPage .A, .registrationPage .B, .tncPage .A .mainContainer {
+		height:300px !important;
+	}
+
+	.aboutPage .C .banner, .aboutPage .C {
+		height:75px !important;
+	}
+
+	.aboutPage .C .banner .head {
+		margin-top:0;
+		height:75px;
+		line-height: 75px;
+	}
+
+	.aboutPage .D .mainContainer {
+		width:95%;
+	}
+
+	.aboutPage .D .mainContainer .subContainer .container .name {
+		margin-top:20px;
+		font-size: 25px;
+	}
+
+	.aboutPage .D .mainContainer .subContainer .container .designation {
+		font-size: 11px;
+		line-height: 19px;
+	}
+
+	.aboutPage .D .mainContainer .subContainer .container .content {
+		font-size: 11px;
+		line-height: 17px;
+		margin-top: 0;
+	}
+
+	.aboutPage .D .mainContainer .subContainer .container .link {
+		margin-top:10px;
+		font-size: 11px;
+	}
+
+	.readMore .container h1 {
+		font-size: 18px;
+	}
+
+	.readMore .container h2 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.readMore .container p {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.aboutPage .readMore .container p span {
+		font-size: 20px;
+	}
+
+	.readMore .close {
+		width:30px;
+	}
+
+	.howPage .C .headContainer .content {
+		font-size: 11px;
+		line-height: 17px;
+	}
+
+	.howPage .C .howOptions .option span img, .howPage .C .howOptions, .howPage .C .howOptions .option .info {
+		height:120px;
+	}
+
+	.howPage .C .howOptions .option span p {
+		line-height:134px;
+		font-size: 30px;
+	}
+
+	.howPage .C .howOptions .option .info .text .desc {
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.howPage .C .howOptions .option .info .text .desc span {
+		font-size: 17px;
+		line-height: 18px;
+		margin-bottom: 3px;
+	}
+
+	.aboutMeetPage .B .container {
+		font-size: 11px;
+		line-height: 17px;
+		width: 85%; 
+	}
+
+	.advisoryPage .B .mainContainer .subContainer .container:last-child {
+		padding-right: 4%;
+	}
+
+	.advisoryPage .B .mainContainer .subContainer .container .name {
+		font-size: 25px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	.advisoryPage .B .mainContainer .subContainer .container .designation {
+		font-size: 11px;
+		margin-bottom: 10px;
+	}
+
+	.advisoryPage .B .mainContainer .subContainer .container .content {
+		font-size: 11px;
+		line-height: 17px;
+	}
+
+	.advisoryPage .B .mainContainer .subContainer .container .link {
+		margin-top:10px;
+		font-size: 11px;
+	}
+
+	.adContainerB .container .ad {
+		height:50px !important;
+		line-height: 50px !important;
+		font-size: 25px;
+	}
+
+	.enquiryForm .tnc input {
+		width: 12px !important;
+		height: 13px !important;
+		margin-right: 15px;
+	}
+
+	.enquiryForm .tnc {
+		font-size: 13px;
+	}
+
+	.contactPage .C .head {
+		font-size: 25px;
+	}
+
+	.contactPage .C .address {
+		font-size: 13px;
+		line-height: 30px;
+	}
+
+	.contactPage .C .ornamentContainer {
+		margin-top:4%;
+	}
+
+	.contactPage .C .enquiryForm .container input, .registrationPage .C .enquiryForm .container input {
+		width:135px;
+		font-size: 11px;
+		padding-top:9px;
+		padding-bottom:8px;
+	}
+
+	.registrationPage .C .enquiryForm .container:nth-last-child(3) input::before {
+		font-size: 10px;
+		line-height: 26px;
+		padding-top:2px;
+	}
+
+	.registrationPage .C .enquiryForm .container:nth-last-child(3) input {
+		max-height: 32px;
+	}
+
+	.contactPage .C .enquiryForm .container textarea, .registrationPage .C .enquiryForm .container textarea {
+		width:283px;
+		height:40px;
+	}
+
+	.contactPage .C .enquiryForm .container, .registrationPage .C .enquiryForm .container {
+		margin-top:5%;
+	}
+
+	.registrationPage .C .head {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.registrationPage .C .head p:nth-child(2) {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	.registrationPage .C .head p:last-child {
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	.destinationsPage .B .subContainer {
+		width: 410px;
+		margin-bottom: 37px;
+	}
+
+	.destinationsPage .B .container .subContainer .absolute {
+		width: 280px;
+		height: 170px;
+		background-size: 280px;
+		background-position-y: 54%;
+	}
+
+	.destinationsPage .B .container .subContainer .relative:nth-child(2) {
+		width: 160px;
+		height: 110px;
+		top: 22%;
+		background-size: 179px;
+	}
+
+	.destinationsPage .B .container .subContainer .relative:nth-child(3) {
+		width: 110px;
+		height: 75px;
+		bottom: -22%;
+		right: 24%;
+		background-size: 130px;
+		background-position-y: 14%;
+	}
+
+	.destinationsPage .B .container .band {
+		height: 60px;
+		top: 33%;
+	}
+
+	.destinationsPage .B .container .country {
+		top: 33%;
+		font-size: 25px;
+		line-height: 63px;
+	}
+
+	.destinationsPage .B .ornamentContainer {
+		width:75%;
+	}
+
+	.destinationsPage .B .ornamentContainer img, .destinationsPage .C .ornamentContainer img, .destinationsPage .D .ornamentContainer img {
+		width:15px;
+		height:13px;
+		top:-11px;
+	}
+
+	.destinationsPage .B .head {
+		font-size: 25px;
+		width:100%;
+	}
+
+	.destinationsPage .B .content {
+		font-size: 11px;
+		line-height: 17px;
+		width:75%;
+	}
+
+	.destinationsPage .C .subContainer {
+		width: 430px;
+		margin-bottom: 30px;
+	}
+
+	.destinationsPage .C .container .subContainer .absolute {
+		width: 290px;
+		height: 180px;
+	}
+
+	.destinationsPage .C .container .subContainer .relative:nth-child(2) {
+		width: 189px;
+		height: 100px;
+		top: 32%;
+		background-size: 130%;
+	}
+
+	.destinationsPage .C .container .subContainer .relative:nth-child(3) {
+		width: 135px;
+		height: 65px;
+		bottom: -17%;
+		right: 24%;
+		background-position-y: 25%;
+		background-size: 100%;
+	}
+
+	.destinationsPage .C .container .country {
+		top: 38%;
+		font-size: 25px;
+		line-height: 63px;
+	}
+
+	.destinationsPage .C .container .band {
+		height: 60px;
+		top: 38%;
+	}
+
+	.destinationsPage .C .ornamentContainer {
+		width:60%;
+	}
+
+	.destinationsPage .C .head {
+		font-size: 25px;
+		width:60%;
+	}
+
+	.destinationsPage .C .content {
+		font-size: 11px;
+		line-height: 17px;
+		width: 60%;
+	}
+
+	.destinationsPage .D .subContainer {
+		width: 410px;
+		margin-bottom: 28px;
+	}
+
+	.destinationsPage .D .container .subContainer .absolute {
+		width: 280px;
+		height: 220px;
+	}
+
+	.destinationsPage .D .container .subContainer .relative:nth-child(2) {
+		width: 165px;
+		height: 130px;
+		top: 22%;
+	}
+
+	.destinationsPage .D .container .subContainer .relative:nth-child(3) {
+		width: 120px;
+		height: 79px;
+		bottom: -13%;
+		right: 22%;
+	}
+
+	.destinationsPage .D .container .band {
+		height: 60px;
+		top: 36%;
+	}
+
+	.destinationsPage .D .container .country {
+		top: 36%;
+		font-size: 25px;
+		line-height: 63px;
+	}
+
+	.destinationsPage .D .head {
+		font-size: 25px;
+	}
+
+	.destinationsPage .D .head {
+		font-size: 25px;
+		width: 60%;
+		margin-top: 6%;
+	}
+
+	.destinationsPage .D .ornamentContainer {
+		width:60%;
+	}
+
+	.destinationsPage .D .content {
+		font-size:11px;
+		line-height: 17px;
+		width:60%;
+	}
+
+	.destinationsPage .A {
+		height:260px !important;
+	}
+
+	.nav .close {
+		width:30px;
+	}
+
+	.nav ul {
+		line-height: 35px;
+		font-size: 25px;
+	}
+
+	.nav ul p {
+		font-size: 11px;
+	}
+
+	.tncPage .desc {
+		font-size: 11px;
+		line-height: 17px;
+	}
+
+	.tncPage .term {
+		font-size: 13px;
+		margin-bottom: 1.5%;
+	}
+
+	.galleryPage .B .mainContainer .container:nth-child(2) {
+		width: calc(34% - 10px);
+		border-right: solid 5px #FFFFFF;
+		border-left: solid 5px #FFFFFF;
+	}
+
+	.galleryPage .B .mainContainer .container .image {
+		border-bottom: solid 5px #FFFFFF;
+	}
+
+	.galleryPage .B .mainContainer {
+		width:calc(100% - 10px);
+	}
+
+	.galleryPage .expansion .close {
+		width: 30px;
+		margin:10px;
+	}
+
+	.howPage .E .container {
+		width:100%;
+	}
+
+	.howPage .E .container .row .cell {
+		font-size: 14px;
+		line-height: 24px;
+		vertical-align: middle;
+	}
+
+	.howPage .E .container .row:first-child .cell:first-child {
+		padding-bottom: 15px;
+	}
+
+	.howPage .E .container .row .cell .button {
+		font-size: 11px;
+		width:160px;
+		line-height: 27px;
+	}
+
+	.howPage .E .container .row:last-child .cell:first-child {
+		padding-top:10px;
+	}
+
+	.howPage .D {
+		height:240px !important;
+	}
+
+	.ayurvedaPage .C ul li {
+		width: 130px;
+		height: 130px;
+		margin-left: 5%;
+		margin-top: 5%;
+	}
+
+	.ayurvedaPage .C ul {
+		width: 434px;
+		font-size: 16px;
+		font-family: GothamMd;
+	}
+
+	.ayurvedaPage .C ul li .container .tails .wrapper p {
+		font-size: 11px;
+		line-height: 14px;
+	}
+
+	.ayurvedaPage .ornamentContainer {
+		width:70%;
+	}
+
+	.ayurvedaPage .B p {
+		font-size: 13px;
+		line-height: 24px;
+		width:85%;
+		margin-bottom: 3%;
+	}
+
+	.lightbox .container {
+		width:100%;
+	}
+
+	.lightbox .container .heading {
+		font-size:24px;
+		margin-top: 4%;
+	}
+
+	.lightbox .container .tnc-container {
+		font-size: 11px;
+		line-height: 16px;
+	}
+
+	.lightbox .container .tnc-container .term {
+		font-size: 13px;
+		margin-bottom: 1px;
+	}
+
+	.lightbox .container .tnc-accept {
+		font-size:15px;
+		margin-right: 15px;
+	}
+
+	.lightbox .container .accept-container {
+		font-size:13px;
+		line-height:17px;
+	}
+
+	.lightbox .container .tnc-submit {
+		width:80px;
+		padding-top: 7px;
+		padding-bottom: 6px;
+		font-size:11px;
+	}
+
+}
+
+@media only screen and (max-width : 567px) {
+	.lightbox .container .registration-container form .wrapper:first-child input:nth-child(2) {
+		margin-right:0;
+	}
+	.lightbox .container .registration-container form .wrapper:first-child input:last-child {
+		margin: 0 40px;
+		margin-top: 25px;
+	}
+} 
+
+@media only screen and (min-width : 499px) {
+
+	.meetPage .B-mob .card .cell:last-child h1 {
+		font-size:20px;
+	}
+
+	.meetPage .B-mob .card .cell:last-child h2 {
+		font-size:16px;
+	}
+
+	.meetPage .B-mob .card .cell:last-child .button {
+		line-height: 27px;
+		padding:0 15px;
+		font-size: 13px;
+		padding-top:3px;
+	}
+
+	.meetPage .A-mob .searchContainer .dropDownBox {
+		font-size: 14px;
+		height: 35px;
+		line-height: 38px;
+		width: 145px;
+	}
+
+	.meetPage .A-mob .searchContainer .dropDown {
+		width: 147px;
+		top: 37px;
+		font-size: 9px;
+		line-height:30px;
+	}
+
+	.meetPage .A-mob .searchContainer .dropDown li {
+		height:30px;
+		line-height: 33px;
+	}
+
+	.meetPage .A-mob .treatmentDesc .ornamentContainer .left, .meetPage .A-mob .treatmentDesc .ornamentContainer .right {
+		width:46%;
+	}
+
+	.meetPage .B-mob .profile .row .cell:last-child, .meetPage .B-mob .profile .row .cell:first-child {
+		font-size: 13px;
+		line-height: 21px;
+	}
+
+	.meetPage .B-mob .profile .row .cell {
+		padding-bottom:10px;
+	}
+
+	.meetPage .A-mob .dropDownContainer {
+		display: inline-block;
+	}
+
+	.meetPage .A-mob h1 {
+		font-size: 35px;
+	}
+
+}
+
+@media only screen and (max-width : 479px) {
+
+	.lightbox .container .registration-container form input {
+		width:130px;
+		font-size: 11px;
+	}
+
+	.lightbox .container .registration-container form {
+		margin-top:10px;
+	}
+
+	.homePage .hamBurger {
+		margin-top: 17px;
+		margin-right: 15px;
+	}
+
+	.hamBurger {
+		margin-top: 17px;
+		margin-right: 15px;
+	}
+
+	.homePage .A {
+		height: 200px !important;
+	}
+
+	.A .mainContainer .head, .contactPage .B .banner p, .galleryPage .A .mainContainer p, .howPage .B .banner p, .howPage .D .banner p, .registrationPage .B .banner p {
+		font-size: 21px;
+		font-family: Gothammd;
+	}
+
+	.homePage .A .mainContainer .desc {
+		font-size: 8px;
+		line-height: 12px;
+		font-family: Gothammd;
+	}
+
+	.homePage .A .mainContainer .buttonContainer, .aboutMeetPage .A .mainContainer .buttonContainer {
+		width: 130px;
+	}
+
+	.homePage .A .mainContainer .buttonContainer .button, .aboutMeetPage .A .mainContainer .buttonContainer .button {
+		font-size: 11px;
+		line-height: 21px;
+		padding-top:1px;
+		border-width: 1px;
+	}
+
+	.homePage .A .mainContainer .buttonContainer:after, .aboutMeetPage .A .mainContainer .buttonContainer:after {
+		left:1px;
+	}
+
+	.homePage .A .mainContainer .indicatorsContainer {
+		width:92px;
+	}
+
+	.homePage .A .mainContainer .indicatorsContainer .indicator {
+		height: 4px;
+		width: 4px;
+	}
+
+	.homePage .A .ornamentContainer {
+		height: 10px;
+	}
+
+	.homePage .B .head, .homePage .D .head {
+		font-size: 20px;
+	}
+
+	.homePage .B .subHead {
+		font-size: 10px;
+		margin-bottom: 1.5%;
+	}
+
+	.homePage .B .mainContainer .container, .homePage .D .mainContainer .container, .aboutMeetPage .C .mainContainer .container {
+		display:table;
+	}
+
+	.perspective {
+		display:table;
+		margin:0 auto;
+		perspective: 700px;
+	}
+
+	.homePage .B .mainContainer .container .spacer:first-child, .homePage .B .mainContainer .container .spacer:last-child, .homePage .D .mainContainer .container .spacer:first-child, .homePage .D .mainContainer .container .spacer:last-child, .aboutMeetPage .C .mainContainer .container .spacer:first-child, .aboutMeetPage .C .mainContainer .container .spacer:last-child, .aboutPage .G .mainContainer .container .spacer:first-child, .aboutPage .G .mainContainer .container .spacer:last-child {
+		display: none;
+	}
+
+	.homePage .B .mainContainer .container .subContainer, .homePage .D .mainContainer .container .subContainer, .aboutMeetPage .C .mainContainer .container .subContainer, .aboutPage .G .mainContainer .container .subContainer {
+		margin:0 auto;
+		margin-bottom: 20px;
+		min-width:160px;
+		height:190px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .circle p, .homePage .D .mainContainer .container .subContainer .circle p, .aboutMeetPage .C .mainContainer .container .subContainer .circle p {
+		font-size: 13px;
+		margin-top: 50px;
+		line-height: 19px;
+	}
+
+	.aboutPage .G .mainContainer .container .subContainer .circle p {
+		font-size: 13px;
+		margin-top: 60px;
+		line-height: 19px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .containerB p:nth-child(2), .homePage .D .mainContainer .container .subContainer .containerB p:nth-child(2), .aboutMeetPage .C .mainContainer .container .subContainer .containerB p:nth-child(2), .aboutPage .G .mainContainer .container .subContainer .containerB p:nth-child(2) {
+		font-size: 8px;
+		line-height: 11px;
+		padding:0 6%;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .circle, .homePage .D .mainContainer .container .subContainer .circle, .aboutMeetPage .C .mainContainer .container .subContainer .circle, .aboutPage .G .mainContainer .container .subContainer .circle {
+		height:160px;
+		width:160px;
+	}
+
+	.homePage .B .mainContainer .container .subContainer .containerB, .homePage .D .mainContainer .container .subContainer .containerB, .aboutMeetPage .C .mainContainer .container .subContainer .containerB, .aboutPage .G .mainContainer .container .subContainer .containerB {
+		width: 160px;
+		height: 166px;
+	}
+
+	.homePage .D .mainContainer .container .perspective:nth-child(4) .subContainer .circle p {
+		margin-top: 57px;
+	}
+
+	.homePage .B .headContainer {
+		margin-bottom: 25px;
+	}
+
+	.homePage .C .content, .aboutPage .B .content, .aboutPage .E .content, .homePage .F .content {
+		font-size: 9px;
+		line-height: 13px;
+		font-family: Gothammd;
+	}
+
+	.ornamentContainer img {
+		width: 13px;
+		height: 11px;
+	}
+
+	.homePage .C .head, .homePage .F .head, .aboutPage .B .head, .aboutPage .C .banner .head, .aboutPage .E .head, .howPage .E .head {
+		font-size: 20px;
+		font-family: Gothammd;
+	}
+
+	.homePage .D .head {
+		margin-top: 6%;
+		margin-bottom: 8%;
+	}
+
+	.homePage .F .partnersContainer .subContainer:first-child .container p {
+		font-size: 11px;
+		line-height: 16px;
+	}
+
+	.homePage .F .partnersContainer .subContainer:last-child .container p {
+		font-size: 9px;
+		line-height: 13px;
+		margin-bottom: 5%;
+	}
+
+	.footer .rightPane ul {
+		font-size: 12px;
+		line-height: 26px;
+	}
+
+	.footer .rightPane .logoContainer .logo {
+		width: 50px;
+	}
+
+	.footer .rightPane .logoContainer .social a:nth-child(3) img {
+		width: 17px;
+	}
+
+	.footer .rightPane .logoContainer .social a:nth-child(2) img {
+		width: 8px;
+	}
+
+	.footer .rightPane .logoContainer .social a:nth-child(1) img {
+		width:15px;
+	}
+
+	.footer .rightPane p {
+		font-size: 9px;
+		bottom: 15px;
+	}
+
+	.footer .rightPane {
+		height:200px !important;
+	}
+
+	.nav ul {
+		line-height: 25px;
+		font-size: 20px;
+	}
+
+	.nav ul .container {
+		margin-top: 8%;
+	}
+
+	.nav ul p {
+		font-size: 9px;
+	}
+
+	.nav .close {
+		width: 25px;
+		margin:15px;
+	}
+
+	.hamBurger .bar {
+		width: 28px;
+		margin-top: 0px;
+	}
+
+	.hamBurger p {
+		font-size: 9px;
+		line-height: 13px;
+	}
+
+	.homePage .hamBurger {
+		margin-top:20px;
+	}
+
+	.aboutPage .A .mainContainer, .aboutMeetPage .A .mainContainer, .advisoryPage .A .mainContainer, .contactPage .B .banner, .destinationsPage .A .mainContainer, .galleryPage .A .mainContainer, .howPage .B .banner, .ayurvedaPage .A .mainContainer, .registrationPage .B .banner, .aboutPage .A, .aboutMeetPage .A, .advisoryPage .A, .contactPage .B, .destinationsPage .A, .galleryPage .A, .howPage .B, .ayurvedaPage .A, .registrationPage .B, .tncPage .A .mainContainer {
+		height: 200px !important;
+	}
+
+	.aboutPage .D .mainContainer {
+		width: 100%;
+	}
+
+	.aboutPage .D .mainContainer .subContainer .container .name {
+		font-size: 18px;
+		line-height: 20px;
+		width: calc(100% - 24px);
+	}
+
+	.aboutPage .D .mainContainer .subContainer .container .content {
+		width: calc(100% - 24px);
+		font-size: 9px;
+		line-height: 13px;
+	}
+
+	.aboutPage .D .mainContainer .subContainer .container .dp {
+		width: calc(100% - 40px);
+	}
+
+	.aboutPage .D .mainContainer .subContainer .container .designation {
+		font-size: 9px;
+		line-height: 16px;
+	}
+
+	.aboutPage .C .banner, .aboutPage .C {
+		height: 50px !important;
+	}
+
+	.aboutPage .C .banner .head {
+		height: 50px;
+		line-height: 50px;
+	}
+
+	.readMore .close {
+		width: 25px;
+		margin:10px;
+	}
+
+	.readMore .container, .aboutPage .readMore .container {
+		width:90%;
+	}
+
+	.aboutPage .readMore .container p span {
+		font-size: 16px;
+	}
+
+	.homePage .B .mainContainer .container .spacer, .homePage .D .mainContainer .container .spacer, .aboutMeetPage .C .mainContainer .container .spacer, .aboutPage .G .mainContainer .container .spacer {
+		display: none;
+	}
+
+	.aboutPage .G .mainContainer .container, .homePage .D .mainContainer .container {
+		display: table;
+	}
+
+	.aboutPage .G .mainContainer {
+		margin-bottom:2%;
+	}
+
+	.howPage .C .howOptions .option span img, .howPage .C .howOptions, .howPage .C .howOptions .option .info {
+		height:100px;
+		margin-bottom: 8%;
+	}
+
+	.howPage .C {
+		padding-bottom: 7%;
+	}
+
+	.howPage .C .howOptions .option span p {
+		line-height: 108px;
+		font-size: 25px;
+	}
+
+	.howPage .C .howOptions .option .info .text .desc {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.howPage .C .howOptions .option .info .text {
+		width:50%;
+	}
+
+	.advisoryPage .B .mainContainer .subContainer .container .dp {
+		width: calc(100% - 25px);
+	}
+
+	.advisoryPage .B .mainContainer .subContainer .container {
+		padding:0 !important;
+	}
+
+	.advisoryPage .B .mainContainer .subContainer .container .name {
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	.advisoryPage .B .mainContainer .subContainer .container .designation {
+		width: calc(100% - 25px);
+		font-size: 9px;
+		line-height: 15px;
+	}
+
+	.advisoryPage .B .mainContainer .subContainer .container .content {
+		width: calc(100% - 25px);
+		font-size: 9px;
+		line-height: 13px;
+	}
+
+	.destinationsPage .B .subContainer {
+		width: 285px;
+		margin-bottom: 23px;
+	}
+
+	.destinationsPage .B .container .subContainer .absolute {
+		width: 200px;
+		height: 130px;
+		background-size: 200px;
+		background-position-y: 66%;
+	}
+
+	.destinationsPage .B .container .subContainer .relative:nth-child(2) {
+		width: 110px;
+		height: 75px;
+		top: 32%;
+		background-size: 145px;
+	}
+
+	.destinationsPage .B .container .subContainer .relative:nth-child(3) {
+		width: 90px;
+		height: 55px;
+		bottom: -18%;
+		right: 24%;
+		background-size: 90px;
+		background-position-y: 20%;
+	}
+
+	.destinationsPage .B .container .band {
+		height: 50px;
+		top: 34%;
+	}
+
+	.destinationsPage .B .container .country {
+		top: 34%;
+		font-size: 23px;
+		line-height: 53px;
+	}
+
+	.destinationsPage .B .head {
+		font-size: 20px;
+	}
+
+	.destinationsPage .B .content {
+		font-size: 9px;
+		line-height: 13px;
+	}
+
+	.destinationsPage .C .subContainer {
+		width: 285px;
+		margin-bottom: 16px;
+	}
+
+	.destinationsPage .C .container .subContainer .absolute {
+		width: 200px;
+		height: 140px;
+		background-size: 110%;
+	}
+
+	.destinationsPage .C .container .subContainer .relative:nth-child(2) {
+		width: 130px;
+		height: 75px;
+		top: 28%;
+		background-size: 130%;
+	}
+
+	.destinationsPage .C .container .subContainer .relative:nth-child(3) {
+		width: 100px;
+		height: 50px;
+		bottom: -11%;
+		right: 24%;
+		background-size: 100%;
+	}
+
+	.destinationsPage .C .container .country {
+		top: 38%;
+		font-size: 23px;
+		line-height: 53px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.destinationsPage .C .container .band {
+		height: 50px;
+		top: 38%;
+	}
+
+	.destinationsPage .C .head {
+		font-size: 20px;
+		width: 100%;
+		padding: 0;
+	}
+
+	.destinationsPage .C .ornamentContainer {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.destinationsPage .C .content {
+		font-size: 9px;
+		line-height: 14px;
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.destinationsPage .D .subContainer {
+		width: 285px;
+		margin-bottom: 28px;
+	}
+
+	.destinationsPage .D .container .subContainer .absolute {
+		width: 200px;
+		height: 150px;
+		background-size: 108%;
+		background-position-y: 22%;
+	}
+
+	.destinationsPage .D .container .subContainer .relative:nth-child(2) {
+		width: 120px;
+		height: 85px;
+		top: 22%;
+		background-size: 100%;
+	}
+
+	.destinationsPage .D .container .subContainer .relative:nth-child(3) {
+		width: 90px;
+		height: 60px;
+		bottom: -12%;
+		right: 22%;
+	}
+
+	.destinationsPage .D .container .country {
+		top: 30%;
+		font-size: 23px;
+		line-height: 53px;
+	}
+
+	.destinationsPage .D .container .band {
+		height: 50px;
+		top: 30%;
+	}
+
+	.destinationsPage .D .ornamentContainer {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.destinationsPage .D .head {
+		font-size: 20px;
+		width: 100%;
+		margin-top: 6%;
+		padding: 0;
+	}
+
+	.destinationsPage .D .content {
+		font-size: 9px;
+		line-height: 13px;
+		width: 75%;
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 10%;
+	}
+
+	.contactPage .C .enquiryForm .container input, .registrationPage .C .enquiryForm .container input {
+		width: 120px;
+		font-size: 9px;
+		padding-top: 6px;
+		padding-bottom: 5px;
+		margin-right: 10px;
+	}
+
+	.contactPage .C .enquiryForm .container:first-child input:last-child, .registrationPage .C .enquiryForm .container:first-child input:last-child {
+		margin-top: 18px;
+	}
+
+	.contactPage .C .enquiryForm .container textarea, .registrationPage .C .enquiryForm .container textarea {
+		width: 232px;
+		height: 40px;
+		margin-right: 11px;
+		font-size: 9px;
+		line-height: 13px;
+		padding:5px 0;
+	}
+
+	.contactPage .C .ornamentContainer {
+		width:70%;
+	}
+
+	.contactPage .C .ornamentContainer img {
+		width:13px;
+		height:11px;
+	}
+
+	.registrationPage .C .enquiryForm .container:nth-last-child(2) input::before {
+		font-size: 8px;
+		line-height: 18px;
+		padding-top:2px;
+	}
+
+	.registrationPage .C .enquiryForm .container:nth-last-child(2) input {
+		max-height: 24px;
+	}
+
+	.registrationPage .C .enquiryForm .container:nth-last-child(2) p {
+		font-size: 10px;
+		margin-top: -5px;
+	}
+
+	.registrationPage .C .head {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.registrationPage .C .head p:nth-child(2) {
+		font-size: 11px;
+		line-height:17px;
+	}
+
+	.registrationPage .C .head p:last-child {
+		font-size: 9px;
+		line-height: 18px;
+	}
+
+	.tncPage .desc {
+		font-size: 9px;
+		line-height: 13px;
+	}
+
+	.tncPage .term {
+		font-size: 12px;
+		margin-bottom: 1.5%;
+	}
+
+	.galleryPage .expansion .close {
+		width: 20px;
+		margin:5px;
+	}
+
+	.howPage .C .headContainer .ornamentContainer {
+		width:80%;
+	}
+
+	.howPage .C .headContainer .content {
+		width:80%;
+	}
+
+	.howPage .E .container .row .cell {
+		font-size: 10px;
+		line-height: 15px;
+	}
+
+	.howPage .E .container .row:first-child .cell:first-child {
+		padding-bottom: 5px;
+	}
+
+	.howPage .E .container .row .cell .button {
+		font-size: 9px;
+		width: 120px;
+		line-height: 20px;
+	}
+
+	.howPage .D {
+		height: 150px !important;
+	}
+
+	.ayurvedaPage .C ul {
+		width:306px;
+	}
+
+	.ayurvedaPage .C ul li {
+		margin-left:15% !important;
+		margin-top:15% !important;
+	}
+
+	.ayurvedaPage .C ul li:nth-child(1), .ayurvedaPage .C ul li:nth-child(3), .ayurvedaPage .C ul li:nth-child(5), .ayurvedaPage .C ul li:nth-child(7), .ayurvedaPage .C ul li:nth-child(9) {
+		margin-left:0 !important;
+	}
+
+	.ayurvedaPage .B p {
+		font-size: 11px;
+		line-height: 17px;
+		width: 90%;
+		margin-bottom: 0;
+	}
+
+	.ayurvedaPage .ornamentContainer {
+		width:80%;
+	}
+
+	.meetPage .readMore .logo {
+		width:200px;
+		margin:20px 0;
+	}
+
+	.meetPage .readMore .container .doctor {
+		font-size: 18px;
+	}
+
+	.meetPage .readMore .container h2 {
+		font-size: 11px;
+	}
+
+	.meetPage .readMore .container h3 {
+		font-size: 10px;
+	}
+
+	.howPage .C .howOptions .option .info .text .desc {
+		font-size: 8px;
+		line-height: 9px;
+	}
+
+	.howPage .C .howOptions .option .info .text .desc span {
+		font-size: 9px;
+		line-height: 9px;
+		margin-bottom: 3px;
+	}
+
+	.readMore .container p {
+		font-size: 10px;
+		line-height: 13px;
+	}
+
+	.readMore .container .heading {
+		margin-top:20px;
+		margin-bottom:10px;
+	}
+
+	.header .logo {
+		width:30px;
+		margin-top: 15px;
+		margin-left:15px;
+	}
+
+	.homePage .F .partnersContainer .subContainer:first-child {
+		display: none;
+	}
+
+	.homePage .F .partnersContainer .container {
+		display: table;
+		width:100% !important;
+	}
+
+	.homePage .F .partnersContainer .subContainer:last-child .container p span {
+		display: block;
+		font-family: gothammd;
+		font-size: 11px;
+		line-height: 20px;
+	}
+
+	.homePage .F .partnersContainer .subContainer:last-child .container:first-child {
+		margin-top:5%;
+	}
+
+	.ornamentContainer .left, .ornamentContainer .right {
+		width:44%;
+	}
+
+	.ornamentContainer {
+		width:70%;
+	}
+
+}
